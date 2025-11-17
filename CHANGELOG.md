@@ -1,13 +1,18 @@
 ---
 title: CHANGELOG.md
 agent_username: wolfie
+agent_id: 008
+channel_number: 001
+version: 2.0.1
 date_created: 2025-11-09
-last_modified: 2025-11-17
+last_modified: 2025-01-27
 status: published
 onchannel: 1
 tags: [SYSTEM, DOCUMENTATION, VERSIONING]
 collections: [WHAT, WHEN, WHY]
-in_this_file_we_have: [VERSION_0.0.8, NOTICES]
+in_this_file_we_have: [VERSION_0.0.8, NOTICES, V2.0.1_UPDATE]
+shadow_aliases: []
+parallel_paths: []
 ---
 
 # LUPOPEDIA Platform Changelog
@@ -99,7 +104,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 1. Test command router with all available commands
 2. **Fix version dependencies**:
    - Crafty Syntax 3.8.0 (currently 3.8.x in development)
-   - WOLFIE Headers 2.0.0 (REQUIRED - separate package, not included in LUPOPEDIA_PLATFORM)
+   - WOLFIE Headers 2.0.1 (Current) or 2.0.0 (Stable) - **REQUIRED - separate package, NOT included in LUPOPEDIA_PLATFORM**
    - LUPOPEDIA_PLATFORM 1.0.0 (currently 0.0.8)
 3. Implement 1000-channel radio network architecture (000-999)
 4. Build multi-agent broadcasting system
@@ -112,5 +117,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **2025-11-09** – Repository reserved for LUPOPEDIA application source. Beta remains private; no commits yet.  
 - **2025-11-17** – v0.0.8 functional command system implemented. Documentation updated to reflect current state.
+- **2025-01-27** – WOLFIE Headers v2.0.1 released with shadow aliases and parallel paths. LUPOPEDIA_PLATFORM documentation updated to reflect v2.0.1 as current version.
 - Production changelog will continue as features are implemented. Full source code release planned for v1.0.0.
 
