@@ -3,14 +3,14 @@ title: README.md
 agent_username: wolfie
 agent_id: 008
 channel_number: 001
-version: 2.0.1
+version: 2.0.2
 date_created: 2025-11-09
 last_modified: 2025-01-27
 status: published
 onchannel: 1
 tags: [SYSTEM, DOCUMENTATION]
 collections: [WHAT, WHY, HOW, HELP]
-in_this_file_we_have: [OVERVIEW, CURRENT_STATUS, FUNCTIONAL_COMMANDS, AGENT_SYSTEM, CHANNEL_SYSTEM, HOW_TO_REQUEST_ACCESS, ROADMAP, V2.0.1_UPDATE]
+in_this_file_we_have: [OVERVIEW, CURRENT_STATUS, FUNCTIONAL_COMMANDS, AGENT_SYSTEM, CHANNEL_SYSTEM, HOW_TO_REQUEST_ACCESS, ROADMAP, V2.0.2_UPDATE]
 shadow_aliases: []
 parallel_paths: []
 ---
@@ -45,7 +45,7 @@ Crafty Syntax Live Help (1999-2025) [Foundation]
     Philosophy: "Always works"
     ↓
     └─> WOLFIE Headers System (2025) [Required Dependency - Separate Package]
-        Version: 2.0.1 (Current) | 2.0.0 (Stable) - REQUIRED
+        Version: 2.0.2 (Current) | 2.0.1 (Stable) | 2.0.0 (Minimum) - REQUIRED
         GitHub: https://github.com/lupopedia/WOLFIE_HEADERS
         10-section format (WHO, WHAT, WHERE, WHEN, WHY, HOW, DO, HACK, OTHER, TAGS)
         YAML frontmatter documentation system
@@ -54,7 +54,7 @@ Crafty Syntax Live Help (1999-2025) [Foundation]
         ↓
         └─> LUPOPEDIA_PLATFORM (2025) [Layer 1]
             Current: 0.0.8 | Target: 1.0.0
-            Requires: WOLFIE Headers 2.0.0+ (v2.0.1 recommended)
+            Requires: WOLFIE Headers 2.0.0+ (v2.0.2 recommended, v2.0.1 stable)
             ↓
             └─> Agent System (2025) [Layer 2]
                 Channels: 000-999 (1000 channels)
@@ -64,11 +64,13 @@ Crafty Syntax Live Help (1999-2025) [Foundation]
 
 **Why This Matters**: Each layer builds on the previous. You cannot skip WOLFIE Headers 2.0.0+ - it is a **required, separate dependency** for LUPOPEDIA_PLATFORM. WOLFIE Headers is **NOT included** in the LUPOPEDIA_PLATFORM package and must be installed independently.
 
-**WOLFIE Headers v2.0.1 Features:**
-- Shadow aliases for parallel validation paths (e.g., `["Lilith-007", "Doubt-VISH"]`)
-- Parallel paths for alternative fallback chains
-- Recursive oversight for self-validating feedback loops
-- Backward compatible with v2.0.0
+**WOLFIE Headers v2.0.2 Features:**
+- Database integration with `content_headers` table (`agent_name` column)
+- Standardized agent file naming convention (`who_is_agent_[channel_id]_[agent_name].php`)
+- Validation scripts for agent files
+- Shadow aliases & parallel paths (from v2.0.1)
+- Recursive oversight (from v2.0.1)
+- Backward compatible with v2.0.1 and v2.0.0
 
 ## CURRENT_STATUS
 
@@ -159,7 +161,7 @@ Requests must include your project goals and preferred deployment tier (shared h
 
 1. **Fix version dependencies**:
    - Crafty Syntax 3.8.0 (currently 3.8.x in development)
-   - WOLFIE Headers 2.0.1 (Current) or 2.0.0 (Stable) - **REQUIRED - separate package, NOT included**
+   - WOLFIE Headers 2.0.2 (Current) | 2.0.1 (Stable) | 2.0.0 (Minimum) - **REQUIRED - separate package, NOT included**
    - LUPOPEDIA_PLATFORM 1.0.0 (currently 0.0.8)
 2. Implement 1000-channel radio network architecture (000-999)
 3. Build multi-agent broadcasting system
@@ -173,25 +175,36 @@ Requests must include your project goals and preferred deployment tier (shared h
 - **Chaos is Intentional**: Overlapping chatter creates sitcom-style logs
 - **Sitcom Documentation**: Help files blend technical manual with sitcom script
 
-## V2.0.1_UPDATE
+## V2.0.2_UPDATE
 
-**WOLFIE Headers v2.0.1 Update** (2025-01-27):
+**WOLFIE Headers v2.0.2 Update** (2025-01-27):
 
-LUPOPEDIA_PLATFORM documentation has been updated to reflect WOLFIE Headers v2.0.1 as the current version.
+LUPOPEDIA_PLATFORM documentation has been updated to reflect WOLFIE Headers v2.0.2 as the current version.
 
 **Key Changes:**
-- WOLFIE Headers v2.0.1 (Current) or v2.0.0 (Stable) - **REQUIRED - separate package, NOT included**
-- Shadow aliases & parallel paths features (LILITH's recommendations implemented)
+- WOLFIE Headers v2.0.2 (Current) | v2.0.1 (Stable) | v2.0.0 (Minimum) - **REQUIRED - separate package, NOT included**
+- Database integration features (`content_headers` table, `agent_name` column)
+- Agent file naming convention (`who_is_agent_[channel_id]_[agent_name].php`)
+- Shadow aliases & parallel paths features (from v2.0.1) still supported
 - GitHub link: https://github.com/lupopedia/WOLFIE_HEADERS
 - Dependency clarified: WOLFIE Headers must be installed separately
 
-**v2.0.1 Features:**
+**v2.0.2 New Features:**
+- Database integration with `content_headers` table
+- Standardized agent file naming convention
+- Validation scripts for agent files
+- Complete database integration documentation
+
+**v2.0.1 Features (Still Supported):**
 - Shadow aliases for parallel validation paths (e.g., `["Lilith-007", "Doubt-VISH"]`)
 - Parallel paths for alternative fallback chains
 - Recursive oversight for self-validating feedback loops
 - Backward compatible with v2.0.0
 
-**Reference:** See [WOLFIE Headers documentation](https://github.com/lupopedia/WOLFIE_HEADERS) for complete v2.0.1 details.
+**Reference:** See [WOLFIE Headers documentation](https://github.com/lupopedia/WOLFIE_HEADERS) for complete v2.0.2 details, including:
+- `docs/DATABASE_INTEGRATION.md` - Database integration guide
+- `docs/AGENT_FILE_NAMING.md` - Agent file naming convention
+- `RELEASE_NOTES_v2.0.2.md` - Complete release notes
 
 ---
 

@@ -3,7 +3,7 @@ title: todo_for_version_1_0_0.md
 agent_username: wolfie
 agent_id: 008
 channel_number: 001
-version: 2.0.1
+version: 2.0.2
 date_created: 2025-01-27
 last_modified: 2025-01-27
 status: draft
@@ -33,7 +33,7 @@ parallel_paths: []
   - Status: Need stable 3.8.0 release
   - Note: Foundation layer of dependency chain
 
-- [ ] **WOLFIE Headers 2.0.1** (Current) or **2.0.0** (Stable) - **REQUIRED**
+- [ ] **WOLFIE Headers 2.0.2** (Current) | **2.0.1** (Stable) | **2.0.0** (Minimum) - **REQUIRED**
   - Status: Separate package, **NOT included** in LUPOPEDIA_PLATFORM - must be installed independently
   - GitHub: https://github.com/lupopedia/WOLFIE_HEADERS
   - Note: Required dependency - cannot skip this. Must be installed separately.
@@ -42,6 +42,9 @@ parallel_paths: []
     - YAML frontmatter
     - Shadow aliases & parallel paths (v2.0.1)
     - Recursive oversight (v2.0.1)
+    - Database integration (v2.0.2)
+    - Agent file naming convention (v2.0.2)
+    - Validation scripts (v2.0.2)
 
 - [ ] **LUPOPEDIA_PLATFORM 1.0.0**
   - Currently: 0.0.8

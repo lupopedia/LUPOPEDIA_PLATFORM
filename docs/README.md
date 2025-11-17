@@ -3,14 +3,14 @@ title: README.md
 agent_username: wolfie
 agent_id: 008
 channel_number: 001
-version: 2.0.1
+version: 2.0.2
 date_created: 2025-11-09
 last_modified: 2025-01-27
 status: published
 onchannel: 1
 tags: [SYSTEM, DOCUMENTATION]
 collections: [WHAT, HOW, HELP]
-in_this_file_we_have: [DOCUMENTATION_INDEX, AVAILABLE_DOCS, EXTERNAL_RESOURCES, V2.0.1_UPDATE]
+in_this_file_we_have: [DOCUMENTATION_INDEX, AVAILABLE_DOCS, EXTERNAL_RESOURCES, V2.0.2_UPDATE]
 shadow_aliases: []
 parallel_paths: []
 ---
@@ -19,7 +19,7 @@ parallel_paths: []
 
 **Version**: v0.0.8 (Functional Command System)  
 **Last Updated**: 2025-01-27  
-**WOLFIE Headers**: v2.0.1 (Current) - Required dependency
+**WOLFIE Headers**: v2.0.2 (Current) - Required dependency
 
 ## DOCUMENTATION_INDEX
 
@@ -84,23 +84,34 @@ When the repository opens, this directory will contain:
 
 **Status**: Documentation is being built while the platform is being developed. "Building while flying. Manual written after the engine explodes. But at least the coffee's hot." ☕
 
-## V2.0.1_UPDATE
+## V2.0.2_UPDATE
 
-**WOLFIE Headers v2.0.1 Update** (2025-01-27):
+**WOLFIE Headers v2.0.2 Update** (2025-01-27):
 
-LUPOPEDIA_PLATFORM documentation has been updated to reflect WOLFIE Headers v2.0.1 as the current version.
+LUPOPEDIA_PLATFORM documentation has been updated to reflect WOLFIE Headers v2.0.2 as the current version.
 
 **Key Updates:**
-- WOLFIE Headers v2.0.1 (Current) or v2.0.0 (Stable) - **REQUIRED - separate package, NOT included**
-- Shadow aliases & parallel paths features documented
-- GitHub link updated to: https://github.com/lupopedia/WOLFIE_HEADERS
+- WOLFIE Headers v2.0.2 (Current) | v2.0.1 (Stable) | v2.0.0 (Minimum) - **REQUIRED - separate package, NOT included**
+- Database integration features documented (`content_headers` table, `agent_name` column)
+- Agent file naming convention documented (`who_is_agent_[channel_id]_[agent_name].php`)
+- Shadow aliases & parallel paths features (from v2.0.1) still supported
+- GitHub link: https://github.com/lupopedia/WOLFIE_HEADERS
 - Dependency chain clarified (WOLFIE Headers is separate, must be installed independently)
 
+**New Features in v2.0.2:**
+- Database integration with `content_headers` table
+- Standardized agent file naming convention
+- Validation scripts for agent files
+- Complete database integration documentation
+
 **Documentation Files Updated:**
-- `README.md` - Dependency chain and version info
-- `CHANGELOG.md` - v2.0.1 notice added
+- `README.md` - Dependency chain and version info updated to v2.0.2
+- `CHANGELOG.md` - v2.0.2 notice added
 - `docs/README.md` - This file updated
 - All public help files updated
 
-**Reference:** See WOLFIE Headers documentation at https://github.com/lupopedia/WOLFIE_HEADERS for complete v2.0.1 details.
+**Reference:** See WOLFIE Headers documentation at https://github.com/lupopedia/WOLFIE_HEADERS for complete v2.0.2 details, including:
+- `docs/DATABASE_INTEGRATION.md` - Database integration guide
+- `docs/AGENT_FILE_NAMING.md` - Agent file naming convention
+- `RELEASE_NOTES_v2.0.2.md` - Complete release notes
 
