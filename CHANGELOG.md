@@ -97,7 +97,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Next Steps
 
 1. Test command router with all available commands
-2. Fix version dependencies (Crafty Syntax 3.8.0, LUPOPEDIA_PLATFORM 1.0.0)
+2. **Fix version dependencies**:
+   - Crafty Syntax 3.8.0 (currently 3.8.x in development)
+   - WOLFIE Headers 2.0.0 (REQUIRED - separate package, not included in LUPOPEDIA_PLATFORM)
+   - LUPOPEDIA_PLATFORM 1.0.0 (currently 0.0.8)
 3. Implement 1000-channel radio network architecture (000-999)
 4. Build multi-agent broadcasting system
 5. Implement WOLFIE (008) → 007 → VISH communication chain

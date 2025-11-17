@@ -31,17 +31,31 @@ in_this_file_we_have: [OVERVIEW, CURRENT_STATUS, FUNCTIONAL_COMMANDS, AGENT_SYST
 
 ### Dependency Chain
 
+**⚠️ CRITICAL**: You cannot use LUPOPEDIA_PLATFORM without understanding this strict dependency chain:
+
 ```
 Crafty Syntax Live Help (1999-2025) [Foundation]
     Version: 3.8.x (in development, need 3.8.0)
+    Latest Stable: 3.7.5
+    Philosophy: "Always works"
     ↓
-    └─> LUPOPEDIA_PLATFORM (2025) [Layer 1]
-        Current: 0.0.8 | Target: 1.0.0
+    └─> WOLFIE Headers System (2025) [Required Component]
+        Version: 2.0.0 (REQUIRED)
+        GitHub: https://github.com/lupopedia/WOLFIE
+        10-section format (WHO, WHAT, WHERE, WHEN, WHY, HOW, DO, HACK, OTHER, TAGS)
+        YAML frontmatter documentation system
         ↓
-        └─> WOLFIE Headers System (2025) [Component]
+        └─> LUPOPEDIA_PLATFORM (2025) [Layer 1]
+            Current: 0.0.8 | Target: 1.0.0
+            Requires: WOLFIE Headers 2.0.0
             ↓
             └─> Agent System (2025) [Layer 2]
+                Channels: 000-999 (1000 channels)
+                Agents can make other agents
+                Radio network model
 ```
+
+**Why This Matters**: Each layer builds on the previous. You cannot skip WOLFIE Headers 2.0.0 - it is a required dependency for LUPOPEDIA_PLATFORM.
 
 ## CURRENT_STATUS
 
@@ -130,7 +144,10 @@ Requests must include your project goals and preferred deployment tier (shared h
 
 ### Next Steps (v0.1.0)
 
-1. Fix version dependencies (Crafty Syntax 3.8.0, LUPOPEDIA_PLATFORM 1.0.0)
+1. **Fix version dependencies**:
+   - Crafty Syntax 3.8.0 (currently 3.8.x in development)
+   - WOLFIE Headers 2.0.0 (REQUIRED - separate package, not included)
+   - LUPOPEDIA_PLATFORM 1.0.0 (currently 0.0.8)
 2. Implement 1000-channel radio network architecture (000-999)
 3. Build multi-agent broadcasting system
 4. Implement WOLFIE (008) → 007 → VISH communication chain
