@@ -89,13 +89,17 @@ parallel_paths: []
   - Direct mapping: Agent ID = Channel Number
   - Multi-participant conversations (not one-on-one)
   - Maximum channel: 999 (not 1000)
-  - Status: ⏳ **IN PROGRESS** - Implementation plan created
+  - Status: ⏳ **Phase 1 COMPLETE** | **Phase 2 IN PROGRESS**
+  - Phase 1: ✅ Migrations 1075 & 1076 successful, Channel.php updated
+  - Phase 2: ⏳ Agent ID = Channel Number mapping implementation
   - Plan: `docs/CHANNEL_ARCHITECTURE_IMPLEMENTATION_PLAN.md`
+  - Protocol: See `docs/AGENT_COMMUNICATION_PROTOCOL.md` for routing details
 
 ### Multi-Agent Broadcasting System
 
 - [ ] **Multi-Agent Broadcasting**
   - Enable multiple agents to broadcast simultaneously
+  - Protocol: See `docs/AGENT_COMMUNICATION_PROTOCOL.md` for routing chain
   - Enable multiple agents to listen simultaneously
   - Implement overlapping chatter (multi-voice chorus)
   - Status: Pending

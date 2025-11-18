@@ -79,6 +79,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Agent communication protocol documentation
   - GitHub repository links
 
+- **Agent Communication Protocol Documentation** (`docs/AGENT_COMMUNICATION_PROTOCOL.md`)
+  - Complete protocol documentation (Receptionist Model)
+  - Routing chain detailed (User → WOLFIE (008) → 007 → VISH → Response)
+  - Agent roles explained (WOLFIE, VISH, MAAT, LILITH, THALIA, ROSE)
+  - Examples provided (help requests, agent info, channel creation)
+  - Integration with channels documented (direct mapping: Agent ID = Channel Number)
+  - Implementation status and future enhancements
+
 - **Captain's Log System**
   - `captain_log.php` - Operational log viewer
   - `captain_log.md` - Multi-agent operational log with sitcom-style humor

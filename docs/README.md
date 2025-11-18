@@ -31,6 +31,13 @@ This directory will contain technical documentation for the LUPOPEDIA Platform o
 
 While the repository remains private, documentation is available in the main LUPOPEDIA installation:
 
+**Core Documentation** (Available in `docs/` directory):
+- `docs/AGENT_COMMUNICATION_PROTOCOL.md` - **Complete Agent Communication Protocol documentation** (Receptionist Model)
+- `docs/FUNCTIONAL_COMMANDS_REFERENCE.md` - Functional commands reference (6 operational commands)
+- `docs/PLATFORM_STATUS_SYNTHESIS.md` - Enhanced platform status with sitcom protocols
+- `docs/CHANNEL_ARCHITECTURE_IMPLEMENTATION_PLAN.md` - 5-phase channel architecture plan
+- `docs/CAPTAINS_LOG_ANALYSIS.md` - Meta-analysis of development saga
+
 **Command System Documentation**:
 - `public/lupopedia.php` - Functional command router
 - `public/help.php` - Comprehensive platform help
@@ -83,6 +90,32 @@ When the repository opens, this directory will contain:
 ---
 
 **Status**: Documentation is being built while the platform is being developed. "Building while flying. Manual written after the engine explodes. But at least the coffee's hot." ☕
+
+## AGENT_COMMUNICATION_PROTOCOL
+
+**📚 Complete Protocol Documentation**: `docs/AGENT_COMMUNICATION_PROTOCOL.md`
+
+The Agent Communication Protocol (Receptionist Model) defines how user requests flow through the multi-agent system:
+
+```
+User Request
+    ↓
+WOLFIE (008) - Reads WOLFIE Headers, routes tasks
+    ↓
+WOLFIE (007) - Executes, transfers to VISH
+    ↓
+VISHWAKARMA (075) - Normalizes requests using headers
+    ↓
+Response
+```
+
+**Key Features:**
+- Fixed routing chain (brittleness is a feature)
+- WOLFIE Headers metadata integration
+- Direct mapping: Agent ID = Channel Number
+- Multi-agent coordination
+
+**See `docs/AGENT_COMMUNICATION_PROTOCOL.md` for complete documentation.**
 
 ## V2.0.2_UPDATE
 

@@ -123,11 +123,23 @@ LUPOPEDIA has a multi-agent system where **agents can create other agents**. Eac
 
 ### Agent Communication Protocol
 
+**The Receptionist Model (Fixed Routing Chain):**
+
 ```
-User Request → WOLFIE (008) → WOLFIE (007) → VISHWAKARMA (075) → Response
+User Request
+    ↓
+WOLFIE (008) - Reads WOLFIE Headers, routes tasks
+    ↓
+WOLFIE (007) - Tactical operator, transfers to VISH
+    ↓
+VISHWAKARMA (075) - Normalizes requests, tracks changes
+    ↓
+Response
 ```
 
 **Philosophy**: WOLFIE (007) doesn't know what he's doing, but knows who to transfer to (VISH). The system works anyway. Brittleness is a feature.
+
+**📚 For complete protocol documentation**, see: `docs/AGENT_COMMUNICATION_PROTOCOL.md`
 
 ## CHANNEL_SYSTEM
 
@@ -163,10 +175,16 @@ Requests must include your project goals and preferred deployment tier (shared h
    - Crafty Syntax 3.8.0 (currently 3.8.x in development)
    - WOLFIE Headers 2.0.2 (Current) | 2.0.1 (Stable) | 2.0.0 (Minimum) - **REQUIRED - separate package, NOT included**
    - LUPOPEDIA_PLATFORM 1.0.0 (currently 0.0.8)
-2. Implement channel radio network architecture (000-999, maximum 999)
-3. Build multi-agent broadcasting system
-4. Implement WOLFIE (008) → 007 → VISH communication chain
-5. Enable agent creation workflow (agents making other agents)
+2. **Implement channel radio network architecture** (000-999, maximum 999)
+   - Phase 1: ✅ Complete (migrations 1075 & 1076, Channel.php updates)
+   - Phase 2: ⏳ In progress (Agent ID = Channel Number mapping)
+   - See: `docs/CHANNEL_ARCHITECTURE_IMPLEMENTATION_PLAN.md`
+3. **Build multi-agent broadcasting system**
+   - Protocol: See `docs/AGENT_COMMUNICATION_PROTOCOL.md`
+4. **Agent Communication Protocol** (Receptionist Model)
+   - ✅ Documentation complete: `docs/AGENT_COMMUNICATION_PROTOCOL.md`
+   - ⏳ Implementation: WOLFIE (008) → 007 → VISH (075) routing chain
+5. **Enable agent creation workflow** (agents making other agents)
 
 ## Philosophy
 
