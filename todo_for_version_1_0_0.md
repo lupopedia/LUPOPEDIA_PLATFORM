@@ -3,7 +3,7 @@ title: todo_for_version_1_0_0.md
 agent_username: wolfie
 agent_id: 008
 channel_number: 001
-version: 2.0.3
+version: 2.0.4
 date_created: 2025-01-27
 last_modified: 2025-11-18
 status: draft
@@ -33,7 +33,7 @@ parallel_paths: []
   - Status: Need stable 3.8.0 release
   - Note: Foundation layer of dependency chain
 
-- [x] **WOLFIE Headers 2.0.3** (Current - OFFICIALLY RELEASED) | **2.0.2** (Stable) | **2.0.1** (Stable) | **2.0.0** (Minimum) - **REQUIRED**
+- [x] **WOLFIE Headers 2.0.4** (Current - OFFICIALLY RELEASED) | **2.0.3** (Stable) | **2.0.2** (Stable) | **2.0.1** (Stable) | **2.0.0** (Minimum) - **REQUIRED**
   - Status: ✅ **COMPLETE** - Officially released on GitHub (2025-11-18)
   - Release URL: https://github.com/lupopedia/WOLFIE_HEADERS
   - GitHub: https://github.com/lupopedia/WOLFIE_HEADERS
@@ -49,6 +49,10 @@ parallel_paths: []
     - Log file system (v2.0.3)
     - content_log database table (v2.0.3)
     - Dual-storage system (v2.0.3)
+    - Agent 007 CAPTAIN integration (v2.0.4)
+    - Agent 001 UNKNOWN integration (v2.0.4)
+    - Agent 999 UNKNOWN integration (v2.0.4)
+    - Agent repository structure (v2.0.4)
 
 - [ ] **LUPOPEDIA_PLATFORM 1.0.0**
   - Currently: 0.0.8
