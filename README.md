@@ -3,14 +3,14 @@ title: README.md
 agent_username: wolfie
 agent_id: 008
 channel_number: 001
-version: 2.0.2
+version: 2.0.3
 date_created: 2025-11-09
-last_modified: 2025-11-17
+last_modified: 2025-11-18
 status: published
 onchannel: 1
 tags: [SYSTEM, DOCUMENTATION]
 collections: [WHAT, WHY, HOW, HELP]
-in_this_file_we_have: [OVERVIEW, CURRENT_STATUS, FUNCTIONAL_COMMANDS, AGENT_SYSTEM, CHANNEL_SYSTEM, HOW_TO_REQUEST_ACCESS, ROADMAP, V2.0.2_UPDATE]
+in_this_file_we_have: [OVERVIEW, CURRENT_STATUS, FUNCTIONAL_COMMANDS, AGENT_SYSTEM, CHANNEL_SYSTEM, HOW_TO_REQUEST_ACCESS, ROADMAP, V2.0.2_UPDATE, V2.0.3_UPDATE]
 shadow_aliases: []
 parallel_paths: []
 ---
@@ -45,16 +45,18 @@ Crafty Syntax Live Help (1999-2025) [Foundation]
     Philosophy: "Always works"
     ↓
     └─> WOLFIE Headers System (2025) [Required Dependency - Separate Package]
-        Version: 2.0.2 (Current) | 2.0.1 (Stable) | 2.0.0 (Minimum) - REQUIRED
+        Version: 2.0.3 (Current) | 2.0.2 (Stable) | 2.0.1 (Stable) | 2.0.0 (Minimum) - REQUIRED
         GitHub: https://github.com/lupopedia/WOLFIE_HEADERS
         10-section format (WHO, WHAT, WHERE, WHEN, WHY, HOW, DO, HACK, OTHER, TAGS)
         YAML frontmatter documentation system
         Shadow aliases & parallel paths (v2.0.1)
+        Database integration (v2.0.2)
+        Log file system (v2.0.3)
         NOT included in LUPOPEDIA_PLATFORM package - must be installed separately
         ↓
         └─> LUPOPEDIA_PLATFORM (2025) [Layer 1]
             Current: 0.0.8 | Target: 1.0.0
-            Requires: WOLFIE Headers 2.0.0+ (v2.0.2 recommended, v2.0.1 stable)
+            Requires: WOLFIE Headers 2.0.0+ (v2.0.3 recommended, v2.0.2 stable)
             ↓
             └─> Agent System (2025) [Layer 2]
                 Channels: 000-999 (maximum 999)
@@ -64,13 +66,16 @@ Crafty Syntax Live Help (1999-2025) [Foundation]
 
 **Why This Matters**: Each layer builds on the previous. You cannot skip WOLFIE Headers 2.0.0+ - it is a **required, separate dependency** for LUPOPEDIA_PLATFORM. WOLFIE Headers is **NOT included** in the LUPOPEDIA_PLATFORM package and must be installed independently.
 
-**WOLFIE Headers v2.0.2 Features:**
-- Database integration with `content_headers` table (`agent_name` column)
-- Standardized agent file naming convention (`who_is_agent_[channel_id]_[agent_name].php`)
-- Validation scripts for agent files
+**WOLFIE Headers v2.0.3 Features:**
+- Log file system with `[channel]_[agent]_log.md` format (v2.0.3)
+- `content_log` database table for log metadata (v2.0.3)
+- Dual-storage system (database + markdown files) (v2.0.3)
+- Database integration with `content_headers` table (`agent_name` column) (v2.0.2)
+- Standardized agent file naming convention (`who_is_agent_[channel_id]_[agent_name].php`) (v2.0.2)
+- Validation scripts for agent files (v2.0.2)
 - Shadow aliases & parallel paths (from v2.0.1)
 - Recursive oversight (from v2.0.1)
-- Backward compatible with v2.0.1 and v2.0.0
+- Backward compatible with v2.0.2, v2.0.1, and v2.0.0
 
 ## CURRENT_STATUS
 
@@ -173,7 +178,7 @@ Requests must include your project goals and preferred deployment tier (shared h
 
 1. **Fix version dependencies**:
    - Crafty Syntax 3.8.0 (currently 3.8.x in development)
-   - WOLFIE Headers 2.0.2 (Current) | 2.0.1 (Stable) | 2.0.0 (Minimum) - **REQUIRED - separate package, NOT included**
+   - WOLFIE Headers 2.0.3 (Current) | 2.0.2 (Stable) | 2.0.1 (Stable) | 2.0.0 (Minimum) - **REQUIRED - separate package, NOT included**
    - LUPOPEDIA_PLATFORM 1.0.0 (currently 0.0.8)
 2. **Implement channel radio network architecture** (000-999, maximum 999)
    - Phase 1: ✅ Complete (migrations 1075 & 1076, Channel.php updates)
@@ -193,26 +198,37 @@ Requests must include your project goals and preferred deployment tier (shared h
 - **Chaos is Intentional**: Overlapping chatter creates sitcom-style logs
 - **Sitcom Documentation**: Help files blend technical manual with sitcom script
 
-## V2.0.2_UPDATE
+## V2.0.3_UPDATE
 
-**WOLFIE Headers v2.0.2 Update** (2025-11-17):
+**WOLFIE Headers v2.0.3 Update** (2025-11-18):
 
-LUPOPEDIA_PLATFORM documentation has been updated to reflect WOLFIE Headers v2.0.2 as the current, officially released version.
+LUPOPEDIA_PLATFORM documentation has been updated to reflect WOLFIE Headers v2.0.3 as the current, officially released version.
 
-**Release Status**: WOLFIE Headers v2.0.2 has been officially released on GitHub (2025-11-17).
-- **Release URL**: https://github.com/lupopedia/WOLFIE_HEADERS/releases/tag/v2.0.2
+**Release Status**: WOLFIE Headers v2.0.3 has been officially released on GitHub (2025-11-18).
+- **Release URL**: https://github.com/lupopedia/WOLFIE_HEADERS
 - **Status**: Latest Release (Current)
-- **Backward Compatible**: Yes — fully compatible with v2.0.1 and v2.0.0
+- **Backward Compatible**: Yes — fully compatible with v2.0.2, v2.0.1, and v2.0.0
 
 **Key Changes:**
-- WOLFIE Headers v2.0.2 (Current) | v2.0.1 (Stable) | v2.0.0 (Minimum) - **REQUIRED - separate package, NOT included**
-- Database integration features (`content_headers` table, `agent_name` column)
-- Agent file naming convention (`who_is_agent_[channel_id]_[agent_name].php`)
+- WOLFIE Headers v2.0.3 (Current) | v2.0.2 (Stable) | v2.0.1 (Stable) | v2.0.0 (Minimum) - **REQUIRED - separate package, NOT included**
+- Log file system with `[channel]_[agent]_log.md` format
+- `content_log` database table for log metadata
+- Dual-storage system (database + markdown files)
+- Database integration features (`content_headers` table, `agent_name` column) (from v2.0.2)
+- Agent file naming convention (`who_is_agent_[channel_id]_[agent_name].php`) (from v2.0.2)
 - Shadow aliases & parallel paths features (from v2.0.1) still supported
 - GitHub link: https://github.com/lupopedia/WOLFIE_HEADERS
 - Dependency clarified: WOLFIE Headers must be installed separately
 
-**v2.0.2 New Features:**
+**v2.0.3 New Features:**
+- Log file system with `[channel]_[agent]_log.md` format
+- `content_log` database table (Migration 1078)
+- Dual-storage system (database + markdown files)
+- Core functions library (`public/includes/wolfie_log_system.php`)
+- Enhanced database sync (smart update-or-insert logic)
+- Complete log system documentation
+
+**v2.0.2 Features (Still Supported):**
 - Database integration with `content_headers` table
 - Standardized agent file naming convention
 - Validation scripts for agent files
@@ -224,10 +240,31 @@ LUPOPEDIA_PLATFORM documentation has been updated to reflect WOLFIE Headers v2.0
 - Recursive oversight for self-validating feedback loops
 - Backward compatible with v2.0.0
 
-**Reference:** See [WOLFIE Headers documentation](https://github.com/lupopedia/WOLFIE_HEADERS) for complete v2.0.2 details, including:
-- `docs/DATABASE_INTEGRATION.md` - Database integration guide
-- `docs/AGENT_FILE_NAMING.md` - Agent file naming convention
-- `RELEASE_NOTES_v2.0.2.md` - Complete release notes
+**Reference:** See [WOLFIE Headers documentation](https://github.com/lupopedia/WOLFIE_HEADERS) for complete v2.0.3 details, including:
+- `RELEASE_NOTES_v2.0.3.md` - Complete release notes
+- `docs/WOLFIE_HEADERS_LOG_SYSTEM_PLAN.md` - Log system architecture
+- `docs/DATABASE_INTEGRATION.md` - Database integration guide (updated with content_log)
+- `docs/WOLFIE_HEADER_SYSTEM_OVERVIEW.md` - System overview (updated with LOG_FILE_SYSTEM)
+- `docs/LOG_FILE_SYSTEM_EXPLAINED.md` - Comprehensive explanation guide
+
+## V2.0.2_UPDATE
+
+**WOLFIE Headers v2.0.2 Update** (2025-11-17):
+
+LUPOPEDIA_PLATFORM documentation was updated to reflect WOLFIE Headers v2.0.2. **Superseded by v2.0.3** (see above).
+
+**Release Status**: WOLFIE Headers v2.0.2 was officially released on GitHub (2025-11-17).
+- **Release URL**: https://github.com/lupopedia/WOLFIE_HEADERS/releases/tag/v2.0.2
+- **Status**: Stable (Superseded by v2.0.3)
+- **Backward Compatible**: Yes — fully compatible with v2.0.1 and v2.0.0
+
+**v2.0.2 Features:**
+- Database integration with `content_headers` table
+- Standardized agent file naming convention
+- Validation scripts for agent files
+- Complete database integration documentation
+
+**Reference:** See [WOLFIE Headers documentation](https://github.com/lupopedia/WOLFIE_HEADERS) for v2.0.2 details.
 
 ---
 
