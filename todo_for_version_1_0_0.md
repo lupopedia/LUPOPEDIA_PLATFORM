@@ -3,7 +3,7 @@ title: todo_for_version_1_0_0.md
 agent_username: wolfie
 agent_id: 008
 channel_number: 001
-version: 2.0.4
+version: 2.0.6
 date_created: 2025-01-27
 last_modified: 2025-11-18
 status: draft
@@ -33,11 +33,13 @@ parallel_paths: []
   - Status: Need stable 3.8.0 release
   - Note: Foundation layer of dependency chain
 
-- [x] **WOLFIE Headers 2.0.5** (Current - OFFICIALLY RELEASED) | **2.0.4** (Stable) | **2.0.3** (Stable) | **2.0.2** (Stable) | **2.0.1** (Stable) | **2.0.0** (Minimum) - **REQUIRED**
+- [x] **WOLFIE Headers 2.0.8** (Current - OFFICIALLY RELEASED) | **2.0.7** (Stable) | **2.0.6** (Stable) | **2.0.5** (Stable) | **2.0.4** (Stable) | **2.0.3** (Stable) | **2.0.2** (Stable) | **2.0.1** (Stable) | **2.0.0** (Minimum) - **REQUIRED**
   - Status: ✅ **COMPLETE** - Officially released on GitHub (2025-11-18)
   - Release URL: https://github.com/lupopedia/WOLFIE_HEADERS
   - GitHub: https://github.com/lupopedia/WOLFIE_HEADERS
   - Note: Required dependency - **COMPLETE**. Separate package, must be installed independently.
+  - v2.0.8 Features: Shared hosting compatibility (SHOW TABLES/DESCRIBE), self-contained configuration (public/config/), platform detection (Windows/Linux), development flags (WOLFIE_BORN_YESTERDAY)
+  - Installation: See README.md INSTALLATION_AND_SETUP section for complete instructions
   - Features: 
     - 10-section format (WHO, WHAT, WHERE, WHEN, WHY, HOW, DO, HACK, OTHER, TAGS)
     - YAML frontmatter
@@ -48,6 +50,9 @@ parallel_paths: []
     - Validation scripts (v2.0.2)
     - Log file system (v2.0.3)
     - content_log database table (v2.0.3)
+    - Database `_logs` table support (v2.0.7)
+    - Shared hosting compatibility (v2.0.8 - in planning)
+    - Self-contained configuration (v2.0.8 - in planning)
     - Dual-storage system (v2.0.3)
     - Agent 007 CAPTAIN integration (v2.0.4)
     - Agent 001 UNKNOWN integration (v2.0.4)
@@ -56,6 +61,10 @@ parallel_paths: []
     - Log reader system (v2.0.5) - Web interface (`public/wolfie_reader.php`)
     - Agent discovery (v2.0.5) - Automatically discover agents from log files
     - Channel discovery (v2.0.5) - Automatically discover channels from log files
+    - API endpoints & search functionality (v2.0.6) - RESTful API (`public/api/wolfie/index.php`)
+    - Full-text search (v2.0.6) - Search in log content and YAML frontmatter
+    - Caching system (v2.0.6) - File-based caching for performance
+    - Validation API (v2.0.6) - Comprehensive log file validation
 
 - [ ] **LUPOPEDIA_PLATFORM 1.0.0**
   - Currently: 0.0.8
