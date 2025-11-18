@@ -3,14 +3,14 @@ title: CHANGELOG.md
 agent_username: wolfie
 agent_id: 008
 channel_number: 001
-version: 2.0.4
+version: 2.0.5
 date_created: 2025-11-09
 last_modified: 2025-11-18
 status: published
 onchannel: 1
 tags: [SYSTEM, DOCUMENTATION, VERSIONING]
 collections: [WHAT, WHEN, WHY]
-in_this_file_we_have: [VERSION_0.0.8, NOTICES, V2.0.2_UPDATE, V2.0.3_UPDATE, V2.0.4_UPDATE]
+in_this_file_we_have: [VERSION_0.0.8, NOTICES, V2.0.2_UPDATE, V2.0.3_UPDATE, V2.0.4_UPDATE, V2.0.5_UPDATE]
 shadow_aliases: []
 parallel_paths: []
 ---
@@ -112,7 +112,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 1. Test command router with all available commands
 2. **Fix version dependencies**:
    - Crafty Syntax 3.8.0 (currently 3.8.x in development)
-   - WOLFIE Headers 2.0.4 (Current) | 2.0.3 (Stable) | 2.0.2 (Stable) | 2.0.1 (Stable) | 2.0.0 (Minimum) - **REQUIRED - separate package, NOT included in LUPOPEDIA_PLATFORM**
+   - WOLFIE Headers 2.0.5 (Current) | 2.0.4 (Stable) | 2.0.3 (Stable) | 2.0.2 (Stable) | 2.0.1 (Stable) | 2.0.0 (Minimum) - **REQUIRED - separate package, NOT included in LUPOPEDIA_PLATFORM**
    - LUPOPEDIA_PLATFORM 1.0.0 (currently 0.0.8)
 3. Implement channel radio network architecture (000-999, maximum 999)
 4. Build multi-agent broadcasting system
@@ -128,21 +128,55 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **2025-11-17** – WOLFIE Headers v2.0.2 officially released on GitHub with database integration and agent file standardization. Release URL: https://github.com/lupopedia/WOLFIE_HEADERS/releases/tag/v2.0.2. LUPOPEDIA_PLATFORM documentation updated to reflect v2.0.2 as current, officially released version (v2.0.1 stable, v2.0.0 minimum).
 - **2025-11-18** – WOLFIE Headers v2.0.3 officially released on GitHub with complete log file system integration. Release URL: https://github.com/lupopedia/WOLFIE_HEADERS. LUPOPEDIA_PLATFORM documentation updated to reflect v2.0.3 as current, officially released version (v2.0.2 stable, v2.0.1 stable, v2.0.0 minimum). **REQUIRED** for platform operation.
 - **2025-11-18** – WOLFIE Headers v2.0.4 officially released on GitHub with agent integration and repository structure. Release URL: https://github.com/lupopedia/WOLFIE_HEADERS. LUPOPEDIA_PLATFORM documentation updated to reflect v2.0.4 as current, officially released version (v2.0.3 stable, v2.0.2 stable, v2.0.1 stable, v2.0.0 minimum). **REQUIRED** for platform operation. Introduces Agent 007 CAPTAIN, Agent 001 UNKNOWN, and Agent 999 UNKNOWN with standardized GitHub repositories.
+- **2025-11-18** – WOLFIE Headers v2.0.5 officially released on GitHub with log reader system. Release URL: https://github.com/lupopedia/WOLFIE_HEADERS. LUPOPEDIA_PLATFORM documentation updated to reflect v2.0.5 as current, officially released version (v2.0.4 stable, v2.0.3 stable, v2.0.2 stable, v2.0.1 stable, v2.0.0 minimum). **REQUIRED** for platform operation. Introduces log reader web interface (`public/wolfie_reader.php`) for browsing and viewing agent log files.
 - Production changelog will continue as features are implemented. Full source code release planned for v1.0.0.
+
+## V2.0.5_UPDATE
+
+**WOLFIE Headers v2.0.5 Update** (2025-11-18):
+
+LUPOPEDIA_PLATFORM documentation has been updated to reflect WOLFIE Headers v2.0.5 as the current, officially released version. **WOLFIE Headers 2.0.5 is REQUIRED for the platform to work.**
+
+**Release Status**: WOLFIE Headers v2.0.5 has been officially released on GitHub (2025-11-18).
+- **Release URL**: https://github.com/lupopedia/WOLFIE_HEADERS
+- **Status**: Latest Release (Current)
+- **Backward Compatible**: Yes — fully compatible with v2.0.4, v2.0.3, v2.0.2, v2.0.1, and v2.0.0
+
+**Key Changes:**
+- WOLFIE Headers v2.0.5 (Current) | v2.0.4 (Stable) | v2.0.3 (Stable) | v2.0.2 (Stable) | v2.0.1 (Stable) | v2.0.0 (Minimum) - **REQUIRED - separate package, NOT included**
+- Log reader system (`public/wolfie_reader.php`) - Web interface for browsing and viewing agent log files
+- Agent discovery - Automatically scans logs directory and lists all unique agents
+- Channel discovery - Extracts channel numbers and lists all unique channels
+- Log viewing options - View by agent, by channel, or specific log files
+- Statistics dashboard - Total logs, unique agents, active channels
+- Filename parsing - Supports both `[channel]_[agent]_log.md` and `[channel]_[agent].md` patterns
+
+**v2.0.5 New Features:**
+- Log reader web interface (`public/wolfie_reader.php`) - Browse and view agent log files
+- Agent discovery - Automatically discover agents from log files
+- Channel discovery - Automatically discover channels from log files
+- Log viewing options - View by agent, by channel, or specific log files
+- Statistics dashboard - Real-time statistics on logs, agents, and channels
+- Filename parsing - Supports multiple filename patterns
+
+**Reference:** See [WOLFIE Headers documentation](https://github.com/lupopedia/WOLFIE_HEADERS) for complete v2.0.5 details, including:
+- `RELEASE_NOTES_v2.0.5.md` - Complete release notes
+- `TODO_2.0.5.md` - Complete implementation plan
+- `public/wolfie_reader.php` - Log reader web interface
 
 ## V2.0.4_UPDATE
 
 **WOLFIE Headers v2.0.4 Update** (2025-11-18):
 
-LUPOPEDIA_PLATFORM documentation has been updated to reflect WOLFIE Headers v2.0.4 as the current, officially released version. **WOLFIE Headers 2.0.4 is REQUIRED for the platform to work.**
+LUPOPEDIA_PLATFORM documentation was updated to reflect WOLFIE Headers v2.0.4. **Superseded by v2.0.5** (see above).
 
-**Release Status**: WOLFIE Headers v2.0.4 has been officially released on GitHub (2025-11-18).
+**Release Status**: WOLFIE Headers v2.0.4 was officially released on GitHub (2025-11-18).
 - **Release URL**: https://github.com/lupopedia/WOLFIE_HEADERS
-- **Status**: Latest Release (Current)
+- **Status**: Stable (Superseded by v2.0.5)
 - **Backward Compatible**: Yes — fully compatible with v2.0.3, v2.0.2, v2.0.1, and v2.0.0
 
 **Key Changes:**
-- WOLFIE Headers v2.0.4 (Current) | v2.0.3 (Stable) | v2.0.2 (Stable) | v2.0.1 (Stable) | v2.0.0 (Minimum) - **REQUIRED - separate package, NOT included**
+- WOLFIE Headers v2.0.4 (Stable) | v2.0.3 (Stable) | v2.0.2 (Stable) | v2.0.1 (Stable) | v2.0.0 (Minimum) - **REQUIRED - separate package, NOT included**
 - Agent 007 CAPTAIN integration - Commanding Officer (GitHub: https://github.com/lupopedia/007_captain)
 - Agent 001 UNKNOWN integration - First Agent & Template (GitHub: https://github.com/lupopedia/001_unknown)
 - Agent 999 UNKNOWN integration - Last Agent & Template (GitHub: https://github.com/lupopedia/999_unknown)

@@ -33,7 +33,7 @@ parallel_paths: []
   - Status: Need stable 3.8.0 release
   - Note: Foundation layer of dependency chain
 
-- [x] **WOLFIE Headers 2.0.4** (Current - OFFICIALLY RELEASED) | **2.0.3** (Stable) | **2.0.2** (Stable) | **2.0.1** (Stable) | **2.0.0** (Minimum) - **REQUIRED**
+- [x] **WOLFIE Headers 2.0.5** (Current - OFFICIALLY RELEASED) | **2.0.4** (Stable) | **2.0.3** (Stable) | **2.0.2** (Stable) | **2.0.1** (Stable) | **2.0.0** (Minimum) - **REQUIRED**
   - Status: ✅ **COMPLETE** - Officially released on GitHub (2025-11-18)
   - Release URL: https://github.com/lupopedia/WOLFIE_HEADERS
   - GitHub: https://github.com/lupopedia/WOLFIE_HEADERS
@@ -53,6 +53,9 @@ parallel_paths: []
     - Agent 001 UNKNOWN integration (v2.0.4)
     - Agent 999 UNKNOWN integration (v2.0.4)
     - Agent repository structure (v2.0.4)
+    - Log reader system (v2.0.5) - Web interface (`public/wolfie_reader.php`)
+    - Agent discovery (v2.0.5) - Automatically discover agents from log files
+    - Channel discovery (v2.0.5) - Automatically discover channels from log files
 
 - [ ] **LUPOPEDIA_PLATFORM 1.0.0**
   - Currently: 0.0.8
