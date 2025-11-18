@@ -3,14 +3,14 @@ title: CHANGELOG.md
 agent_username: wolfie
 agent_id: 008
 channel_number: 001
-version: 2.0.6
+version: 2.1.0
 date_created: 2025-11-09
 last_modified: 2025-11-18
 status: published
 onchannel: 1
 tags: [SYSTEM, DOCUMENTATION, VERSIONING]
 collections: [WHAT, WHEN, WHY]
-in_this_file_we_have: [VERSION_0.0.8, NOTICES, V2.0.2_UPDATE, V2.0.3_UPDATE, V2.0.4_UPDATE, V2.0.5_UPDATE, V2.0.6_UPDATE, V2.0.7_UPDATE, V2.0.8_UPDATE]
+in_this_file_we_have: [VERSION_0.0.8, NOTICES, V2.0.2_UPDATE, V2.0.3_UPDATE, V2.0.4_UPDATE, V2.0.5_UPDATE, V2.0.6_UPDATE, V2.0.7_UPDATE, V2.0.8_UPDATE, V2.1.0_UPDATE]
 shadow_aliases: []
 parallel_paths: []
 ---
@@ -131,8 +131,46 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **2025-11-18** – WOLFIE Headers v2.0.5 officially released on GitHub with log reader system. Release URL: https://github.com/lupopedia/WOLFIE_HEADERS. LUPOPEDIA_PLATFORM documentation updated to reflect v2.0.5 as current, officially released version (v2.0.4 stable, v2.0.3 stable, v2.0.2 stable, v2.0.1 stable, v2.0.0 minimum). **REQUIRED** for platform operation. Introduces log reader web interface (`public/wolfie_reader.php`) for browsing and viewing agent log files.
 - **2025-11-18** – WOLFIE Headers v2.0.6 officially released on GitHub with API endpoints and search functionality. Release URL: https://github.com/lupopedia/WOLFIE_HEADERS. LUPOPEDIA_PLATFORM documentation updated to reflect v2.0.6 as current, officially released version (v2.0.5 stable, v2.0.4 stable, v2.0.3 stable, v2.0.2 stable, v2.0.1 stable, v2.0.0 minimum). **REQUIRED** for platform operation. Introduces RESTful API endpoints (`public/api/wolfie/index.php`) for programmatic access, full-text search, caching system, and validation API.
 - **2025-11-18** – WOLFIE Headers v2.0.7 officially released on GitHub with database `_logs` table support. Release URL: https://github.com/lupopedia/WOLFIE_HEADERS. LUPOPEDIA_PLATFORM documentation updated to reflect v2.0.7 as stable version (v2.0.6 stable, v2.0.5 stable, v2.0.4 stable, v2.0.3 stable, v2.0.2 stable, v2.0.1 stable, v2.0.0 minimum). **REQUIRED** for platform operation. Introduces row-level change tracking for database records with auto-discovery of `_logs` tables.
-- **2025-11-18** – WOLFIE Headers v2.0.8 in planning phase with shared hosting compatibility and self-contained configuration. Release URL: https://github.com/lupopedia/WOLFIE_HEADERS. LUPOPEDIA_PLATFORM documentation updated to reflect v2.0.8 as current target version (v2.0.7 stable, v2.0.6 stable, v2.0.5 stable, v2.0.4 stable, v2.0.3 stable, v2.0.2 stable, v2.0.1 stable, v2.0.0 minimum). **REQUIRED** for platform operation. Introduces shared hosting compatibility (uses `SHOW TABLES` and `DESCRIBE` instead of `information_schema`), centralized configuration in `public/config/`, and platform detection (Windows/Linux).
+- **2025-11-18** – WOLFIE Headers v2.0.8 officially released with shared hosting compatibility and self-contained configuration. Release URL: https://github.com/lupopedia/WOLFIE_HEADERS. LUPOPEDIA_PLATFORM documentation updated to reflect v2.0.8 as stable version (v2.0.7 stable, v2.0.6 stable, v2.0.5 stable, v2.0.4 stable, v2.0.3 stable, v2.0.2 stable, v2.0.1 stable, v2.0.0 minimum). **REQUIRED** for platform operation. Introduces shared hosting compatibility (uses `SHOW TABLES` and `DESCRIBE` instead of `information_schema`), centralized configuration in `public/config/`, and platform detection (Windows/Linux).
+- **2025-11-18** – WOLFIE Headers v2.1.0 officially released with API consistency, error handling, and user onboarding improvements. Release URL: https://github.com/lupopedia/WOLFIE_HEADERS. LUPOPEDIA_PLATFORM documentation updated to reflect v2.1.0 as current, officially released version (v2.0.9 stable, v2.0.8 stable, v2.0.7 stable, v2.0.6 stable, v2.0.5 stable, v2.0.4 stable, v2.0.3 stable, v2.0.2 stable, v2.0.1 stable, v2.0.0 minimum). **REQUIRED** for platform to work correctly. Introduces API consistency & security (standardized endpoint patterns, input validation), user onboarding (simplified "choose your path" guide), error handling standardization, complete API documentation, troubleshooting guide, and standard error handler. **Crafty Syntax 3.8.0 (In Development - REQUIRED)** - Required for LUPOPEDIA_PLATFORM to work correctly.
 - Production changelog will continue as features are implemented. Full source code release planned for v1.0.0.
+
+## V2.1.0_UPDATE
+
+**WOLFIE Headers v2.1.0 Update** (2025-11-18):
+
+LUPOPEDIA_PLATFORM documentation has been updated to reflect WOLFIE Headers v2.1.0 as the current, officially released version. **WOLFIE Headers 2.1.0 is REQUIRED for the platform to work correctly.**
+
+**Release Status**: WOLFIE Headers v2.1.0 has been officially released (2025-11-18).
+- **Release URL**: https://github.com/lupopedia/WOLFIE_HEADERS
+- **Status**: Current Version (Released - Production Ready)
+- **Backward Compatible**: Yes — fully compatible with v2.0.9, v2.0.8, v2.0.7, v2.0.6, v2.0.5, v2.0.4, v2.0.3, v2.0.2, v2.0.1, and v2.0.0
+
+**v2.1.0 New Features**:
+- **API Consistency & Security**: Standardized endpoint patterns, input validation for all parameters, security improvements
+- **User Onboarding**: Simplified "choose your path" guide (`docs/QUICK_START_CHOOSE_YOUR_PATH.md`)
+- **Error Handling**: Standard error response format with helpful suggestions
+- **Complete API Documentation**: Comprehensive API reference (`docs/API_REFERENCE.md`)
+- **Troubleshooting Guide**: Common issues and solutions (`docs/TROUBLESHOOTING_GUIDE.md`)
+- **Standard Error Handler**: New `wolfie_error_handler.php` with validation functions
+- **Complete Examples**: Working examples for both agent logs and database logs (`docs/EXAMPLES_AGENT_LOGS_AND_DATABASE_LOGS.md`)
+
+**Dependency Chain Update**:
+- WOLFIE Headers v2.1.0 (Current - REQUIRED) | v2.0.9 (Stable) | v2.0.8 (Stable) | v2.0.7 (Stable) | v2.0.6 (Stable) | v2.0.5 (Stable) | v2.0.4 (Stable) | v2.0.3 (Stable) | v2.0.2 (Stable) | v2.0.1 (Stable) | v2.0.0 (Minimum) - **REQUIRED - separate package, NOT included**
+- Crafty Syntax 3.8.0 (In Development - REQUIRED) - **REQUIRED for platform to work correctly**
+
+**Installation & Usage**:
+1. **Download WOLFIE Headers v2.1.0**
+   - GitHub: https://github.com/lupopedia/WOLFIE_HEADERS
+   - Follow installation instructions in `README.md`
+   - Configure `public/config/database.php` and `public/config/system.php`
+
+2. **Install Crafty Syntax 3.8.0** (when available)
+   - Currently in development
+   - Required for LUPOPEDIA_PLATFORM foundation layer
+   - Status: ⚠️ IN DEVELOPMENT
+
+**Reference**: See [WOLFIE Headers documentation](https://github.com/lupopedia/WOLFIE_HEADERS) for complete v2.1.0 details.
 
 ## V2.0.8_UPDATE
 

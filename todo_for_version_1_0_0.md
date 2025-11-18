@@ -28,16 +28,18 @@ parallel_paths: []
 
 ### Version Dependencies (MUST FIX)
 
-- [ ] **Crafty Syntax 3.8.0**
-  - Currently: 3.8.x in development
-  - Status: Need stable 3.8.0 release
-  - Note: Foundation layer of dependency chain
+- [ ] **Crafty Syntax 3.8.0** (In Development - REQUIRED)
+  - Currently: 3.8.0 in development
+  - Status: ⚠️ IN DEVELOPMENT - Required for LUPOPEDIA_PLATFORM to work correctly
+  - Note: Foundation layer of dependency chain - REQUIRED for platform to work correctly
 
-- [x] **WOLFIE Headers 2.0.8** (Current - OFFICIALLY RELEASED) | **2.0.7** (Stable) | **2.0.6** (Stable) | **2.0.5** (Stable) | **2.0.4** (Stable) | **2.0.3** (Stable) | **2.0.2** (Stable) | **2.0.1** (Stable) | **2.0.0** (Minimum) - **REQUIRED**
+- [x] **WOLFIE Headers 2.1.0** (Current - OFFICIALLY RELEASED) | **2.0.9** (Stable) | **2.0.8** (Stable) | **2.0.7** (Stable) | **2.0.6** (Stable) | **2.0.5** (Stable) | **2.0.4** (Stable) | **2.0.3** (Stable) | **2.0.2** (Stable) | **2.0.1** (Stable) | **2.0.0** (Minimum) - **REQUIRED**
   - Status: ✅ **COMPLETE** - Officially released on GitHub (2025-11-18)
   - Release URL: https://github.com/lupopedia/WOLFIE_HEADERS
   - GitHub: https://github.com/lupopedia/WOLFIE_HEADERS
   - Note: Required dependency - **COMPLETE**. Separate package, must be installed independently.
+  - v2.1.0 Features: API consistency & security, user onboarding, error handling standardization, complete API documentation, troubleshooting guide, standard error handler
+  - v2.0.9 Features: Three log systems documentation
   - v2.0.8 Features: Shared hosting compatibility (SHOW TABLES/DESCRIBE), self-contained configuration (public/config/), platform detection (Windows/Linux), development flags (WOLFIE_BORN_YESTERDAY)
   - Installation: See README.md INSTALLATION_AND_SETUP section for complete instructions
   - Features: 
@@ -51,8 +53,14 @@ parallel_paths: []
     - Log file system (v2.0.3)
     - content_log database table (v2.0.3)
     - Database `_logs` table support (v2.0.7)
-    - Shared hosting compatibility (v2.0.8 - in planning)
-    - Self-contained configuration (v2.0.8 - in planning)
+    - Shared hosting compatibility (v2.0.8)
+    - Self-contained configuration (v2.0.8)
+    - Three log systems documentation (v2.0.9)
+    - API consistency & security (v2.1.0)
+    - User onboarding (v2.1.0)
+    - Error handling standardization (v2.1.0)
+    - Complete API documentation (v2.1.0)
+    - Troubleshooting guide (v2.1.0)
     - Dual-storage system (v2.0.3)
     - Agent 007 CAPTAIN integration (v2.0.4)
     - Agent 001 UNKNOWN integration (v2.0.4)

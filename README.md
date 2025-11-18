@@ -3,14 +3,14 @@ title: README.md
 agent_username: wolfie
 agent_id: 008
 channel_number: 001
-version: 2.0.6
+version: 2.1.0
 date_created: 2025-11-09
 last_modified: 2025-11-18
 status: published
 onchannel: 1
 tags: [SYSTEM, DOCUMENTATION]
 collections: [WHAT, WHY, HOW, HELP]
-in_this_file_we_have: [OVERVIEW, CURRENT_STATUS, FUNCTIONAL_COMMANDS, AGENT_SYSTEM, CHANNEL_SYSTEM, HOW_TO_REQUEST_ACCESS, ROADMAP, V2.0.2_UPDATE, V2.0.3_UPDATE, V2.0.4_UPDATE, V2.0.5_UPDATE, V2.0.6_UPDATE, V2.0.7_UPDATE, V2.0.8_UPDATE]
+in_this_file_we_have: [OVERVIEW, CURRENT_STATUS, FUNCTIONAL_COMMANDS, AGENT_SYSTEM, CHANNEL_SYSTEM, HOW_TO_REQUEST_ACCESS, ROADMAP, V2.0.2_UPDATE, V2.0.3_UPDATE, V2.0.4_UPDATE, V2.0.5_UPDATE, V2.0.6_UPDATE, V2.0.7_UPDATE, V2.0.8_UPDATE, V2.1.0_UPDATE]
 shadow_aliases: []
 parallel_paths: []
 ---
@@ -40,12 +40,13 @@ parallel_paths: []
 
 ```
 Crafty Syntax Live Help (1999-2025) [Foundation]
-    Version: 3.8.x (in development, need 3.8.0)
+    Version: 3.8.0 (in development) - REQUIRED
     Latest Stable: 3.7.5
     Philosophy: "Always works"
+    Status: ⚠️ IN DEVELOPMENT - Required for LUPOPEDIA_PLATFORM to work correctly
     ↓
     └─> WOLFIE Headers System (2025) [Required Dependency - Separate Package]
-        Version: 2.0.8 (Current) | 2.0.7 (Stable) | 2.0.6 (Stable) | 2.0.5 (Stable) | 2.0.4 (Stable) | 2.0.3 (Stable) | 2.0.2 (Stable) | 2.0.1 (Stable) | 2.0.0 (Minimum) - REQUIRED
+        Version: 2.1.0 (Current - REQUIRED) | 2.0.9 (Stable) | 2.0.8 (Stable) | 2.0.7 (Stable) | 2.0.6 (Stable) | 2.0.5 (Stable) | 2.0.4 (Stable) | 2.0.3 (Stable) | 2.0.2 (Stable) | 2.0.1 (Stable) | 2.0.0 (Minimum) - REQUIRED
         GitHub: https://github.com/lupopedia/WOLFIE_HEADERS
         10-section format (WHO, WHAT, WHERE, WHEN, WHY, HOW, DO, HACK, OTHER, TAGS)
         YAML frontmatter documentation system
@@ -57,11 +58,14 @@ Crafty Syntax Live Help (1999-2025) [Foundation]
         API endpoints & search functionality (v2.0.6)
         Database `_logs` table support (v2.0.7)
         Shared hosting compatibility & self-contained configuration (v2.0.8)
+        Three log systems documentation (v2.0.9)
+        API consistency, error handling, user onboarding (v2.1.0)
         NOT included in LUPOPEDIA_PLATFORM package - must be installed separately
         ↓
         └─> LUPOPEDIA_PLATFORM (2025) [Layer 1]
             Current: 0.0.8 | Target: 1.0.0
-            Requires: WOLFIE Headers 2.0.0+ (v2.0.8 required, v2.0.7 stable, v2.0.6 stable)
+            Requires: WOLFIE Headers 2.1.0 (required) | 2.0.9 (stable) | 2.0.8 (stable) | 2.0.7 (stable) | 2.0.6 (stable) | 2.0.5 (stable) | 2.0.4 (stable) | 2.0.3 (stable) | 2.0.2 (stable) | 2.0.1 (stable) | 2.0.0 (minimum)
+            Requires: Crafty Syntax 3.8.0 (in development) - REQUIRED
             ↓
             └─> Agent System (2025) [Layer 2]
                 Channels: 000-999 (maximum 999)
@@ -69,9 +73,19 @@ Crafty Syntax Live Help (1999-2025) [Foundation]
                 Radio network model
 ```
 
-**Why This Matters**: Each layer builds on the previous. You cannot skip WOLFIE Headers 2.0.0+ - it is a **required, separate dependency** for LUPOPEDIA_PLATFORM. WOLFIE Headers is **NOT included** in the LUPOPEDIA_PLATFORM package and must be installed independently.
+**Why This Matters**: Each layer builds on the previous. You cannot skip WOLFIE Headers 2.1.0 or Crafty Syntax 3.8.0 - they are **required dependencies** for LUPOPEDIA_PLATFORM to work correctly. WOLFIE Headers is **NOT included** in the LUPOPEDIA_PLATFORM package and must be installed independently.
 
-**WOLFIE Headers v2.0.8 Features:**
+**⚠️ CRITICAL REQUIREMENTS**:
+- **WOLFIE Headers 2.1.0** (Current - REQUIRED) - API consistency, error handling, user onboarding, complete API documentation, troubleshooting guide
+- **Crafty Syntax 3.8.0** (In Development - REQUIRED) - Foundation layer, currently in development
+
+**WOLFIE Headers v2.1.0 Features:**
+- API consistency & security (v2.1.0) - Standardized endpoint patterns, input validation, security improvements
+- User onboarding (v2.1.0) - Simplified "choose your path" guide, progressive disclosure documentation
+- Error handling standardization (v2.1.0) - Standard error response format with helpful suggestions
+- Complete API documentation (v2.1.0) - Comprehensive API reference with examples
+- Troubleshooting guide (v2.1.0) - Common issues and solutions
+- Three log systems documentation (v2.0.9) - Comprehensive explanation of agent logs, database logs, and md_files
 - Shared hosting compatibility & self-contained configuration (v2.0.8) - Uses `SHOW TABLES` and `DESCRIBE` instead of `information_schema`, centralized configuration in `public/config/`
 - Database `_logs` table support (v2.0.7) - Row-level change tracking for database records
 - API endpoints & search functionality (v2.0.6) - RESTful API for programmatic access, full-text search
@@ -88,7 +102,7 @@ Crafty Syntax Live Help (1999-2025) [Foundation]
 - Validation scripts for agent files (v2.0.2)
 - Shadow aliases & parallel paths (from v2.0.1)
 - Recursive oversight (from v2.0.1)
-- Backward compatible with v2.0.7, v2.0.6, v2.0.5, v2.0.4, v2.0.3, v2.0.2, v2.0.1, and v2.0.0
+- Backward compatible with v2.0.9, v2.0.8, v2.0.7, v2.0.6, v2.0.5, v2.0.4, v2.0.3, v2.0.2, v2.0.1, and v2.0.0
 
 ## CURRENT_STATUS
 
@@ -191,7 +205,8 @@ Requests must include your project goals and preferred deployment tier (shared h
 
 1. **Fix version dependencies**:
    - Crafty Syntax 3.8.0 (currently 3.8.x in development)
-   - WOLFIE Headers 2.0.5 (Current) | 2.0.4 (Stable) | 2.0.3 (Stable) | 2.0.2 (Stable) | 2.0.1 (Stable) | 2.0.0 (Minimum) - **REQUIRED - separate package, NOT included**
+   - WOLFIE Headers 2.1.0 (Current - REQUIRED) | 2.0.9 (Stable) | 2.0.8 (Stable) | 2.0.7 (Stable) | 2.0.6 (Stable) | 2.0.5 (Stable) | 2.0.4 (Stable) | 2.0.3 (Stable) | 2.0.2 (Stable) | 2.0.1 (Stable) | 2.0.0 (Minimum) - **REQUIRED - separate package, NOT included**
+   - Crafty Syntax 3.8.0 (In Development - REQUIRED) - **REQUIRED for platform to work correctly**
    - LUPOPEDIA_PLATFORM 1.0.0 (currently 0.0.8)
 2. **Implement channel radio network architecture** (000-999, maximum 999)
    - Phase 1: ✅ Complete (migrations 1075 & 1076, Channel.php updates)
