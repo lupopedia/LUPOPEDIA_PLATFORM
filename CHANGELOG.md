@@ -3,11 +3,11 @@ title: CHANGELOG.md
 agent_username: wolfie
 agent_id: 008
 channel_number: 001
-version: 0.0.8
-wolfie_headers_version: 2.2.2
+version: 0.1.0
+wolfie_headers_version: 2.1.0
 crafty_syntax_version: 3.8.0
 date_created: 2025-11-09
-last_modified: 2025-11-18
+last_modified: 2025-11-20
 status: published
 onchannel: 1
 tags: [SYSTEM, DOCUMENTATION, VERSIONING]
@@ -22,22 +22,113 @@ parallel_paths: []
 All notable changes to **LUPOPEDIA Platform** will be documented in this file.
 
 **License**: GPL v3.0 + Apache 2.0 (dual license) | **Copyright**: © 2025 LUPOPEDIA LLC  
-**Status**: Private INVITE-ONLY BETA | **Current Version**: v0.0.8
+**Status**: Private INVITE-ONLY BETA | **Current Version**: v0.1.0
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
-## Current Status (2025-11-18)
+## Current Status (2025-11-20)
 
 | Component | Version | Status | Notes |
 |-----------|---------|--------|-------|
-| LUPOPEDIA Platform | 0.0.8 | Beta | Functional command system |
-| WOLFIE Headers | 2.2.2 | ✅ Released | Required dependency - Advanced search, export, analytics |
+| LUPOPEDIA Platform | 0.1.0 | ✅ **RELEASED** | Dual-database support & enhanced channel mapping - Released 11/20/2025 |
+| WOLFIE Headers | 2.1.0 | ✅ Released | Required dependency - API consistency & error handling |
 | Crafty Syntax | 3.8.0 | ⚠️ In Development | **Critical Blocker** - Pre-Alpha Dec 2025, 37 tables (30+4 DNA+3 core) |
 
 **📚 For complete WOLFIE Headers information**, see: [WOLFIE Headers Integration Guide](docs/WOLFIE_HEADERS_INTEGRATION.md)
+
+---
+
+## [0.1.0] - 2025-11-20 - Dual-Database Support & Enhanced Channel Mapping ✅ RELEASED
+
+**Release Date**: November 20, 2025  
+**Status**: ✅ **RELEASED** - Dual-database support operational, enhanced channel/agent mapping  
+**Focus**: Database migration capabilities (MySQL ↔ PostgreSQL) and improved federation architecture
+
+### Added
+
+- **Dual-Database Support (MySQL ↔ PostgreSQL)**
+  - Full bidirectional migration support between MySQL and PostgreSQL
+  - Database abstraction layer for seamless switching
+  - Migration scripts and CLI tools for database conversion
+  - Data integrity verification during migrations
+  - Support for private beta migrations
+
+- **Enhanced Channel Mapping (`Channel.php`)**
+  - Improved channel architecture for smoother federation
+  - Enhanced direct mapping: Agent ID = Channel Number (000-999)
+  - Full-text search integration via WOLFIE Headers v2.1.0 APIs
+  - Caching system for improved performance
+  - Better support for multi-domain portability
+
+- **Channel 007 Exclusive Reservation**
+  - **Channel 007 reserved exclusively for Eric Robin Gerdes (Wolfie)**
+  - No other agents permitted on Channel 007
+  - System enforcement prevents agent assignment to Channel 007
+  - Reserved channel status documented in agent communication protocol
+  - Complete documentation: `docs/CHANNEL_007_RESERVATION.md`
+  - This is the original programmer's personal channel - off-limits to all agents
+
+- **Full-Text Search & Caching**
+  - Integration with WOLFIE Headers v2.1.0 search APIs
+  - Full-text search across channels, agents, and content
+  - Query result caching for improved response times
+  - Search functionality accessible via command system
+
+- **Improved Federation Architecture**
+  - Enhanced portability across domains
+  - Better dual-storage synchronization (database + Markdown files)
+  - Improved cross-domain collection portability
+  - Enhanced radio network model for multi-domain broadcasting
+
+### Changed
+
+- **Database Layer** - Refactored to support both MySQL and PostgreSQL
+- **Channel System** - Enhanced mapping and search capabilities
+- **Agent Communication Protocol** - Updated to reflect Channel 007 reservation
+- **Documentation** - Updated to reflect v0.1.0 capabilities and Channel 007 status
+
+### Philosophy
+
+- **Building While Flying**: Database migrations tested in production. The coffee machine survived. ☕
+- **Brittleness is a Feature**: Direct Agent ID = Channel Number mapping remains (with Channel 007 exception)
+- **Chaos is Intentional**: Multi-agent broadcasting continues, but Channel 007 stays quiet for the captain
+- **Federation First**: Enhanced portability means your collections travel seamlessly across domains
+
+### Breaking Changes
+
+- **Channel 007 Access**: Channel 007 is now system-enforced as exclusive to Eric Robin Gerdes (Wolfie). Any existing agent assignments to Channel 007 will be automatically reassigned during migration.
+
+### Migration Notes
+
+- **Database Migration**: Use provided migration scripts to convert between MySQL and PostgreSQL
+- **Channel 007**: Existing agents on Channel 007 will be automatically reassigned during upgrade
+- **WOLFIE Headers**: Requires v2.1.0 or higher for full-text search and caching features
+
+### Release Notes
+
+**v0.1.0 Released**: November 20, 2025
+
+This release marks a significant milestone in the LUPOPEDIA Platform development:
+- ✅ Dual-database support fully operational
+- ✅ Enhanced channel mapping with Channel 007 exclusivity
+- ✅ Full-text search and caching integrated
+- ✅ Improved federation architecture
+
+**Next Version**: v0.2.0 (Notification, Vector Search, Invite Tooling) - In Development
+
+### Next Steps (v0.2.0)
+
+1. Implement notification system (Symfony Notifier)
+2. Implement vector search (PgVector for PostgreSQL, full-text fallback for MySQL)
+3. Build invite tooling (UUID token system)
+4. Continue development toward v1.0.0 (Public source release + installer)
+5. **Fix version dependencies**:
+   - Crafty Syntax 3.8.0 (currently 3.8.x in development)
+   - WOLFIE Headers 2.1.0 (Current) | 2.0.9 (Stable) | 2.0.8 (Stable) | 2.0.7 (Stable) | 2.0.6 (Stable) | 2.0.5 (Stable) | 2.0.4 (Stable) | 2.0.3 (Stable) | 2.0.2 (Stable) | 2.0.1 (Stable) | 2.0.0 (Minimum) - **REQUIRED**
+   - LUPOPEDIA_PLATFORM 1.0.0 (currently 0.1.0, target: Q1 2026)
 
 ---
 
@@ -147,6 +238,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **2025-11-18** – WOLFIE Headers v2.0.7 officially released on GitHub with database `_logs` table support. Release URL: https://github.com/lupopedia/WOLFIE_HEADERS. LUPOPEDIA_PLATFORM documentation updated to reflect v2.0.7 as stable version (v2.0.6 stable, v2.0.5 stable, v2.0.4 stable, v2.0.3 stable, v2.0.2 stable, v2.0.1 stable, v2.0.0 minimum). **REQUIRED** for platform operation. Introduces row-level change tracking for database records with auto-discovery of `_logs` tables.
 - **2025-11-18** – WOLFIE Headers v2.0.8 officially released with shared hosting compatibility and self-contained configuration. Release URL: https://github.com/lupopedia/WOLFIE_HEADERS. LUPOPEDIA_PLATFORM documentation updated to reflect v2.0.8 as stable version (v2.0.7 stable, v2.0.6 stable, v2.0.5 stable, v2.0.4 stable, v2.0.3 stable, v2.0.2 stable, v2.0.1 stable, v2.0.0 minimum). **REQUIRED** for platform operation. Introduces shared hosting compatibility (uses `SHOW TABLES` and `DESCRIBE` instead of `information_schema`), centralized configuration in `public/config/`, and platform detection (Windows/Linux).
 - **2025-11-18** – WOLFIE Headers v2.1.0 officially released with API consistency, error handling, and user onboarding improvements. Release URL: https://github.com/lupopedia/WOLFIE_HEADERS. LUPOPEDIA_PLATFORM documentation updated to reflect v2.1.0 as current, officially released version (v2.0.9 stable, v2.0.8 stable, v2.0.7 stable, v2.0.6 stable, v2.0.5 stable, v2.0.4 stable, v2.0.3 stable, v2.0.2 stable, v2.0.1 stable, v2.0.0 minimum). **REQUIRED** for platform to work correctly. Introduces API consistency & security (standardized endpoint patterns, input validation), user onboarding (simplified "choose your path" guide), error handling standardization, complete API documentation, troubleshooting guide, and standard error handler. **Crafty Syntax 3.8.0 (In Development - REQUIRED)** - Required for LUPOPEDIA_PLATFORM to work correctly.
+- **2025-11-20** – **LUPOPEDIA Platform v0.1.0 RELEASED** - Dual-database support (MySQL ↔ PostgreSQL), enhanced channel mapping with Channel 007 exclusivity, full-text search & caching, improved federation architecture. Release date: November 20, 2025. Next version: v0.2.0 (Notification, Vector Search, Invite Tooling) - In Development.
 - Production changelog will continue as features are implemented. Full source code release planned for v1.0.0.
 
 ## WOLFIE Headers Integration

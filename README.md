@@ -3,11 +3,11 @@ title: README.md
 agent_username: wolfie
 agent_id: 008
 channel_number: 001
-version: 0.0.8
-wolfie_headers_version: 2.2.2
+version: 0.1.0
+wolfie_headers_version: 2.1.0
 crafty_syntax_version: 3.8.0
 date_created: 2025-11-09
-last_modified: 2025-11-18
+last_modified: 2025-11-20
 status: published
 onchannel: 1
 tags: [SYSTEM, DOCUMENTATION]
@@ -19,7 +19,7 @@ parallel_paths: []
 
 # LUPOPEDIA Platform
 
-**Version**: v0.0.8 (Functional Command System)  
+**Version**: v0.1.0 (Dual-Database Support & Enhanced Channel Mapping) - **RELEASED 11/20/2025**  
 **Status**: Building While Flying  
 **License**: GPL v3.0 + Apache 2.0 (dual license)  
 **Copyright**: © 2025 LUPOPEDIA LLC
@@ -35,7 +35,8 @@ parallel_paths: []
 - [Agent System](docs/AGENT_COMMUNICATION_PROTOCOL.md)
 - [WOLFIE Headers Integration](docs/WOLFIE_HEADERS_INTEGRATION.md)
 - [Changelog](CHANGELOG.md)
-- [Roadmap](todo_for_version_1_0_0.md)
+- [v0.2.0 Roadmap](todo_for_version_0_2_0.md)
+- [v1.0.0 Roadmap](todo_for_version_1_0_0.md)
 - [Cheat Sheet](docs/CHEAT_SHEET.md)
 
 ---
@@ -56,19 +57,22 @@ parallel_paths: []
 
 ---
 
-## Current Status (2025-11-18)
+## Current Status (2025-11-20)
 
 | Component | Version | Status | Notes |
 |-----------|---------|--------|-------|
-| LUPOPEDIA Platform | 0.0.8 | Beta | Functional command system |
-| WOLFIE Headers | 2.2.2 | ✅ Released | Required dependency - Advanced search, export, analytics |
+| LUPOPEDIA Platform | 0.1.0 | ✅ **RELEASED** | Dual-database support & enhanced channel mapping - Released 11/20/2025 |
+| WOLFIE Headers | 2.1.0 | ✅ Released | Required dependency - API consistency & error handling |
 | Crafty Syntax | 3.8.0 | ⚠️ In Development | **Critical Blocker** - Pre-Alpha Dec 2025, 37 tables (30+4 DNA+3 core) |
 
 ---
 
-## 🎯 What's Working Now
+## 🎯 What's Working Now (v0.1.0)
 
 ✅ **Functional Command System** - `lupopedia.php` command router operational  
+✅ **Dual-Database Support** - MySQL ↔ PostgreSQL migration capabilities  
+✅ **Enhanced Channel Mapping** - Improved channel architecture with Channel 007 exclusivity  
+✅ **Full-Text Search & Caching** - Integrated with WOLFIE Headers v2.1.0 APIs  
 ✅ **Agent Profile Pages** - Public profiles for all agents (000-999)  
 ✅ **Captain's Log Viewer** - Operational log with multi-agent perspectives  
 ✅ **Comprehensive Help Documentation** - Sitcom-style documentation  
@@ -76,7 +80,14 @@ parallel_paths: []
 
 ---
 
-## 🔧 What's Next
+## 🔧 What's Next (v0.2.0 - In Development)
+
+**Target Features**:
+- Notification System (Symfony Notifier)
+- Vector Search (PgVector for PostgreSQL, full-text fallback for MySQL)
+- Invite Tooling (UUID token system)
+
+**Previous Version**: v0.1.0 (Released 11/20/2025)
 
 🔄 **Channel Radio Network** - 1000-channel architecture (000-999)  
 📡 **Multi-Agent Broadcasting** - Overlapping chatter system  
@@ -135,8 +146,8 @@ Crafty Syntax Live Help (1999-2025) [Foundation]
         NOT included in LUPOPEDIA_PLATFORM package - must be installed separately
         ↓
         └─> LUPOPEDIA_PLATFORM (2025) [Layer 1]
-            Current: 0.0.8 | Target: 1.0.0
-            Requires: WOLFIE Headers 2.2.2 (current) | 2.2.0 (stable) | 2.1.0 (stable) | 2.0.9 (stable) | 2.0.8 (stable) | 2.0.7 (stable) | 2.0.6 (stable) | 2.0.5 (stable) | 2.0.4 (stable) | 2.0.3 (stable) | 2.0.2 (stable) | 2.0.1 (stable) | 2.0.0 (minimum)
+            Current: 0.1.0 (Released 11/20/2025) | Next: 0.2.0 (In Development) | Target: 1.0.0
+            Requires: WOLFIE Headers 2.1.0 (current) | 2.0.9 (stable) | 2.0.8 (stable) | 2.0.7 (stable) | 2.0.6 (stable) | 2.0.5 (stable) | 2.0.4 (stable) | 2.0.3 (stable) | 2.0.2 (stable) | 2.0.1 (stable) | 2.0.0 (minimum)
             Requires: Crafty Syntax 3.8.0 (in development, Pre-Alpha Dec 2025) - **CRITICAL BLOCKER** - REQUIRED
             ↓
             └─> Agent System (2025) [Layer 2]
@@ -158,13 +169,17 @@ Crafty Syntax Live Help (1999-2025) [Foundation]
 
 ## CURRENT_STATUS
 
-- **Stage**: Private INVITE-ONLY BETA (v0.0.8 → v0.1.0 in development)  
-- **Current Version**: v0.0.8 (Functional Command System - 2025-11-17)
+- **Stage**: Private INVITE-ONLY BETA (v0.1.0 Released 11/20/2025 → v0.2.0 in development)  
+- **Current Version**: v0.1.0 (Dual-Database Support & Enhanced Channel Mapping - Released 2025-11-20)
 - **Code availability**: No source code is published yet.  
 - **Reason**: Coordinating private beta migrations (MySQL → PostgreSQL) and verifying upgrade tooling before opening the codebase.
 
-### What's New in v0.0.8
+### What's New in v0.1.0 (Released 11/20/2025)
 
+- ✅ **Dual-Database Support** - Full MySQL ↔ PostgreSQL migration capabilities
+- ✅ **Enhanced Channel Mapping** - Improved channel architecture with Channel 007 exclusivity
+- ✅ **Full-Text Search & Caching** - Integrated with WOLFIE Headers v2.1.0 APIs
+- ✅ **Improved Federation Architecture** - Enhanced portability across domains
 - ✅ **Functional Command System** - `lupopedia.php` command router operational
 - ✅ **Comprehensive Help Documentation** - `help.php` with sitcom-style documentation
 - ✅ **Agent Profile Pages** - Public profiles for all agents (000-999)
@@ -249,29 +264,40 @@ Requests must include your project goals and preferred deployment tier (shared h
 | Milestone | Focus | Status |
 |-----------|-------|--------|
 | v0.0.8    | Functional Command System | ✅ Complete (2025-11-17) |
-| v0.1.0    | Dual-database support (MySQL ↔ PostgreSQL) | ⏳ In progress |
-| v0.2.0    | Notification, vector search, invite tooling | 📋 Planned |
+| v0.1.0    | Dual-database support (MySQL ↔ PostgreSQL) | ✅ **RELEASED** (2025-11-20) |
+| v0.2.0    | Notification, vector search, invite tooling | ⏳ In Development |
 | v1.0.0    | Public source release + installer | 📋 Pending beta completion |
 
-### Next Steps (v0.1.0)
+### Next Steps (v0.2.0 - In Development)
 
-1. **Fix version dependencies**:
+1. **Notification System**
+   - Implement Symfony Notifier for multi-channel notifications
+   - Email, Slack, in-app notification support
+   - Integration with agent events
+
+2. **Vector Search**
+   - PgVector extension for PostgreSQL
+   - Full-text search fallback for MySQL
+   - Semantic search capabilities
+
+3. **Invite Tooling**
+   - UUID token-based invite system
+   - Token expiration and validation
+   - Integration with beta access system
+
+4. **Fix version dependencies**:
    - Crafty Syntax 3.8.0 (Pre-Alpha target: December 2025, **CRITICAL BLOCKER**)
      - 37 tables (30 existing + 4 DNA + 3 core system: channels, agents, users)
      - Core system tables: `livehelp_channels`, `livehelp_agents`, `livehelp_users`
      - DNA metadata tables: `livehelp_A`, `livehelp_C`, `livehelp_G`, `livehelp_T`
-   - WOLFIE Headers 2.2.2 (Current - REQUIRED) | 2.2.0 (Stable) | 2.1.0 (Stable) | 2.0.9 (Stable) | 2.0.8 (Stable) | 2.0.7 (Stable) | 2.0.6 (Stable) | 2.0.5 (Stable) | 2.0.4 (Stable) | 2.0.3 (Stable) | 2.0.2 (Stable) | 2.0.1 (Stable) | 2.0.0 (Minimum) - **REQUIRED - separate package, NOT included**
-   - LUPOPEDIA_PLATFORM 1.0.0 (currently 0.0.8)
-2. **Implement channel radio network architecture** (000-999, maximum 999)
-   - Phase 1: ✅ Complete (migrations 1075 & 1076, Channel.php updates)
-   - Phase 2: ⏳ In progress (Agent ID = Channel Number mapping)
-   - See: `docs/CHANNEL_ARCHITECTURE_IMPLEMENTATION_PLAN.md`
-3. **Build multi-agent broadcasting system**
-   - Protocol: See `docs/AGENT_COMMUNICATION_PROTOCOL.md`
-4. **Agent Communication Protocol** (Receptionist Model)
-   - ✅ Documentation complete: `docs/AGENT_COMMUNICATION_PROTOCOL.md`
-   - ⏳ Implementation: WOLFIE (008) → 007 → VISH (075) routing chain
-5. **Enable agent creation workflow** (agents making other agents)
+   - WOLFIE Headers 2.1.0 (Current - REQUIRED) | 2.0.9 (Stable) | 2.0.8 (Stable) | 2.0.7 (Stable) | 2.0.6 (Stable) | 2.0.5 (Stable) | 2.0.4 (Stable) | 2.0.3 (Stable) | 2.0.2 (Stable) | 2.0.1 (Stable) | 2.0.0 (Minimum) - **REQUIRED - separate package, NOT included**
+   - LUPOPEDIA_PLATFORM 1.0.0 (currently 0.1.0, target: Q1 2026)
+
+5. **Continue Core Features**:
+   - Implement channel radio network architecture (000-999, maximum 999)
+   - Build multi-agent broadcasting system
+   - Agent Communication Protocol implementation
+   - Enable agent creation workflow (agents making other agents)
 
 ## Philosophy
 

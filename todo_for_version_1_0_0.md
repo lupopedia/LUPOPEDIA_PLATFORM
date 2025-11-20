@@ -18,8 +18,9 @@ parallel_paths: []
 # TODO for Version 1.0.0
 
 **Target Version**: v1.0.0  
-**Current Version**: v0.0.8  
-**Status**: Pending beta completion  
+**Current Version**: v0.1.0 (Released 11/20/2025)  
+**Next Version**: v0.2.0 (In Development)  
+**Status**: v0.1.0 Released, v0.2.0 In Development, v1.0.0 Pending  
 **Main Goal**: Public source release + installer
 
 ---
@@ -86,35 +87,72 @@ parallel_paths: []
     - Analytics dashboard (v2.2.2) - Comprehensive analytics and insights
 
 - [ ] **LUPOPEDIA_PLATFORM 1.0.0**
-  - Currently: 0.0.8
-  - Status: In development
+  - Currently: 0.1.0 (Released 11/20/2025)
+  - Next: 0.2.0 (In Development)
+  - Status: In development toward 1.0.0
   - Note: Must reach 1.0.0 before public release
 
 ---
 
 ## MILESTONE PREREQUISITES
 
-### v0.1.0 - Dual-database Support (In Progress)
+### v0.1.0 - Dual-database Support ✅ RELEASED (11/20/2025)
 
-- [ ] **MySQL ↔ PostgreSQL Migration**
+- [x] **MySQL ↔ PostgreSQL Migration**
   - Implement dual-database support
   - Verify upgrade tooling
   - Complete private beta migrations
-  - Status: ⏳ In progress
+  - Status: ✅ **COMPLETE** - Released 11/20/2025
 
-### v0.2.0 - Core Features (Planned)
+- [x] **Enhanced Channel Mapping**
+  - Improved channel architecture for smoother federation
+  - Enhanced direct mapping: Agent ID = Channel Number (000-999)
+  - Full-text search integration via WOLFIE Headers v2.1.0 APIs
+  - Caching system for improved performance
+  - Status: ✅ **COMPLETE** - Released 11/20/2025
+
+- [x] **Channel 007 Exclusive Reservation**
+  - Channel 007 reserved exclusively for Eric Robin Gerdes (Wolfie)
+  - System enforcement prevents agent assignment to Channel 007
+  - Complete documentation: `docs/CHANNEL_007_RESERVATION.md`
+  - Status: ✅ **COMPLETE** - Released 11/20/2025
+
+- [x] **Full-Text Search & Caching**
+  - Integration with WOLFIE Headers v2.1.0 search APIs
+  - Full-text search across channels, agents, and content
+  - Query result caching for improved response times
+  - Status: ✅ **COMPLETE** - Released 11/20/2025
+
+- [x] **Improved Federation Architecture**
+  - Enhanced portability across domains
+  - Better dual-storage synchronization (database + Markdown files)
+  - Improved cross-domain collection portability
+  - Status: ✅ **COMPLETE** - Released 11/20/2025
+
+### v0.2.0 - Core Features (In Development)
 
 - [ ] **Notification System**
-  - Implement notification functionality
-  - Status: 📋 Planned
+  - Implement Symfony Notifier for multi-channel notifications
+  - Email, Slack, in-app notification support
+  - Integration with agent events
+  - Rate limiting to prevent spam
+  - Status: ⏳ In Development
 
 - [ ] **Vector Search**
-  - Implement vector search capabilities
-  - Status: 📋 Planned
+  - PgVector extension for PostgreSQL
+  - Full-text search fallback for MySQL
+  - Sentence Transformers integration for embeddings
+  - VectorSearchService with cosine similarity queries
+  - Integration with WOLFIE Headers' full-text search (v2.1.0)
+  - Status: ⏳ In Development
 
 - [ ] **Invite Tooling**
-  - Build invite system tooling
-  - Status: 📋 Planned
+  - UUID token-based invite system (Ramsey/Uuid)
+  - Token expiration (24h default)
+  - CAPTCHA validation
+  - `/invite` endpoint in `public/api/`
+  - Integration with beta access system
+  - Status: ⏳ In Development
 
 ---
 
@@ -1997,12 +2035,13 @@ Based on comprehensive documentation analysis, these improvements will significa
 
 | Component | Version | Status | Notes |
 |-----------|---------|--------|-------|
-| **LUPOPEDIA Platform** | 0.0.8 | Beta | Functional Command System Operational |
-| **WOLFIE Headers** | 2.2.2 | Released | Required Dependency - Advanced search, export, analytics |
+| **LUPOPEDIA Platform** | 0.1.0 | ✅ **RELEASED** | Dual-database support & enhanced channel mapping - Released 11/20/2025 |
+| **WOLFIE Headers** | 2.1.0 | ✅ Released | Required Dependency - API consistency & error handling |
 | **Crafty Syntax** | 3.8.0 | ⚠️ In Development | **Critical Blocker** - Pre-Alpha Dec 2025, 37 tables (30+4 DNA+3 core), multi-instance support |
 | **Functional Commands** | 6 Commands | ✅ Operational | Router (`lupopedia.php`) works |
-| **Channel Architecture** | 000-999 | ⏳ Phase 2 In Progress | Direct mapping: Agent ID = Channel Number |
-| **v0.1.0 Milestone** | Dual-Database | ⏳ In Progress | MySQL ↔ PostgreSQL migration |
+| **Channel Architecture** | 000-999 | ✅ Enhanced | Direct mapping: Agent ID = Channel Number, Channel 007 exclusive |
+| **v0.1.0 Milestone** | Dual-Database | ✅ **COMPLETE** | MySQL ↔ PostgreSQL migration - Released 11/20/2025 |
+| **v0.2.0 Milestone** | Core Features | ⏳ In Development | Notification, Vector Search, Invite Tooling |
 | **Agent DNA System** | v0.3.0 | 📋 Planned | Full lifecycle prototype suggested |
 | **Agent Communication Chain** | - | ⏳ Pending | Middleware pattern implementation suggested |
 | **Security Hardening** | - | 📋 Planned | MAAT/LILITH recommendations added |
@@ -2023,7 +2062,8 @@ Based on comprehensive documentation analysis, these improvements will significa
 
 ---
 
-**Last Updated**: 2025-11-18 23:00:00  
+**Last Updated**: 2025-11-20  
 **Source**: Compiled from CHANGELOG.md and README.md  
+**v0.1.0 Release Date**: November 20, 2025  
 **Enhancements**: Added DNA encoding rules, mutation types, archetypes, lifecycle hooks, documentation flow improvements (glossary, cross-linking, status tables), technical improvements (database abstraction, vector search, event system, testing), roadmap refinement, quick wins section (including documentation quick wins), critical blocker analysis, actionable implementation suggestions, MAAT & LILITH joint review with security hardening, performance optimization, testing requirements, user experience improvements, documentation completeness, modernization roadmap, success metrics, documentation quality improvements (version consistency fixes, installation clarity, visual documentation, practical examples, improved cross-referencing), narrative & humor layer (Captain's Log integration, crew commentary format, sitcom episodes counter), DNA validation schema, archetypes documentation in README, lifecycle hooks in CHANGELOG, and comprehensive critical analysis with prioritized improvement roadmap addressing dependency risks, architectural brittleness, usability issues, and project management improvements - inspired by Crafty Syntax 3.8.0 and WOLFIE Headers 2.2.2 patterns
 
