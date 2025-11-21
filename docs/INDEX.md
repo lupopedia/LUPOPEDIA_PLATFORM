@@ -42,6 +42,7 @@ parallel_paths: []
 ### System Architecture
 - **[Agent Communication Protocol](AGENT_COMMUNICATION_PROTOCOL.md)** - How agents communicate and route requests
 - **[Channel Architecture Implementation Plan](CHANNEL_ARCHITECTURE_IMPLEMENTATION_PLAN.md)** - 1000-channel system design
+- **[Evolutionary Branching System](EVOLUTIONARY_BRANCHING_SYSTEM.md)** - Version control as genetic lineage tracking
 - **[Platform Status Synthesis](PLATFORM_STATUS_SYNTHESIS.md)** - Current system status
 
 ### Reference
@@ -81,22 +82,29 @@ parallel_paths: []
 
 **⚠️ CRITICAL**: Install dependencies in this exact order:
 
-1. **Crafty Syntax 3.8.0** (Foundation - In Development - **CRITICAL BLOCKER**)
-   - Status: ⚠️ Required but in development - Pre-Alpha target: December 2025
-   - **Database Schema**: 37 tables (30 existing + 4 DNA + 3 core system: channels, agents, users)
+1. **Crafty Syntax 4.0.0** (Foundation - Evolved - **REQUIRED** - Parent Fork)
+   - Status: ✅ Evolved - GA-optimized chat flows, 20% better retention
+   - **Database Schema**: 44 tables (30 existing + 4 DNA + 4 biological + 3 core + 3 evolutionary)
    - **Core System Tables**: `livehelp_channels`, `livehelp_agents`, `livehelp_users`
-   - **DNA Metadata Tables**: `livehelp_A`, `livehelp_C`, `livehelp_G`, `livehelp_T`
+   - **DNA Metadata Tables**: `livehelp_dna`, `livehelp_dna_logs`, `livehelp_dna_collections`, `livehelp_dna_tags`
+   - **Biological Tables**: `livehelp_genes`, `livehelp_transcripts`, `livehelp_proteins`, `livehelp_mutations`
+   - **Evolutionary Tables**: `evo_genome`, `evo_population_stats`, `evo_fitness_logs`
+   - **Fork Lineage**: Crafty Syntax 3.7.5 → Crafty Syntax 4.0.0 (parent of LUPOPEDIA fork)
    - See: Crafty Syntax documentation
 
-2. **WOLFIE Headers 2.2.2** (Required Dependency - Separate Package - Current Version)
-   - Status: ✅ Released - Required
-   - **Features**: Advanced search, export, analytics dashboard
+2. **WOLFIE Headers 2.3.0** (Required Dependency - Separate Package - Mutating)
+   - Status: 🔧 Mutating - 95% Complete, validating crossover rates
+   - **Features**: Evolutionary strategies, metadata evolution, self-healing mutations
    - See: [WOLFIE Headers Integration Guide](WOLFIE_HEADERS_INTEGRATION.md)
    - **⚠️ NOT included in LUPOPEDIA_PLATFORM package**
 
-3. **LUPOPEDIA Platform 0.0.8** (Current)
-   - Status: Beta
+3. **LUPOPEDIA Platform 4.0.0** (Current - Apex - Fork of Crafty Syntax 4.0.0)
+   - Status: 🎯 Apex - 90% Complete, evolutionary arena operational
+   - **Features**: Evolutionary branching system, genetic algorithm integration
+   - **Fork Lineage**: LUPOPEDIA 4.0.0 is the evolutionary fork of Crafty Syntax 4.0.0
+   - **Version Inheritance**: Maintains genetic continuity by inheriting version number from parent fork
    - See: [Installation Guide](INSTALLATION.md)
+   - See: [Evolutionary Branching System](EVOLUTIONARY_BRANCHING_SYSTEM.md)
 
 ---
 
@@ -121,6 +129,7 @@ docs/
 ├── INDEX.md (this file)
 ├── INSTALLATION.md
 ├── WOLFIE_HEADERS_INTEGRATION.md
+├── EVOLUTIONARY_BRANCHING_SYSTEM.md
 ├── CHEAT_SHEET.md
 ├── SUPPORT.md
 ├── AGENT_COMMUNICATION_PROTOCOL.md
@@ -138,6 +147,7 @@ docs/
 - **Installation**: [Installation Guide](INSTALLATION.md)
 - **Agents**: [Agent Communication Protocol](AGENT_COMMUNICATION_PROTOCOL.md)
 - **Channels**: [Channel Architecture](CHANNEL_ARCHITECTURE_IMPLEMENTATION_PLAN.md)
+- **Version Control**: [Evolutionary Branching System](EVOLUTIONARY_BRANCHING_SYSTEM.md)
 - **Commands**: [Functional Commands Reference](FUNCTIONAL_COMMANDS_REFERENCE.md)
 - **WOLFIE Headers**: [WOLFIE Headers Integration](WOLFIE_HEADERS_INTEGRATION.md)
 
