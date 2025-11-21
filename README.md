@@ -37,7 +37,13 @@ parallel_paths: []
 - [Agent System](docs/AGENT_COMMUNICATION_PROTOCOL.md)
 - [WOLFIE Headers Integration](docs/WOLFIE_HEADERS_INTEGRATION.md)
 - [Evolutionary Branching System](docs/EVOLUTIONARY_BRANCHING_SYSTEM.md)
+- [Fork Takeover Plan](docs/FORK_TAKEOVER_PLAN.md)
 - [Changelog](CHANGELOG.md)
+- [v4.0.0 Roadmap](todo_for_version_4_0_0.md)
+- [v4.0.1 Roadmap](todo_for_version_4_0_1.md)
+- [v4.0.2 Roadmap](todo_for_version_4_0_2.md)
+- [v4.0.3 Roadmap](todo_for_version_4_0_3.md)
+- [v4.0.4 Roadmap](todo_for_version_4_0_4.md)
 - [v0.2.0 Roadmap](todo_for_version_0_2_0.md)
 - [v1.0.0 Roadmap](todo_for_version_1_0_0.md)
 - [Cheat Sheet](docs/CHEAT_SHEET.md)
@@ -72,6 +78,14 @@ parallel_paths: []
 
 **Fork Lineage**: LUPOPEDIA 4.0.0 is the evolutionary fork of Crafty Syntax 4.0.0, maintaining genetic continuity and version inheritance. This reflects the actual fork tree: Crafty Syntax 3.7.5 → Crafty Syntax 4.0.0 → LUPOPEDIA 4.0.0 (fork).
 
+**⚠️ FORK TAKEOVER PLAN**: 
+- **Crafty Syntax 4.0.4** is the **FINAL VERSION** of Crafty Syntax
+- **Lupopedia 4.0.5** takes over as the independent platform
+- **All development from v4.0.5 onward is on Lupopedia 4.0.x only**
+- No more Crafty Syntax development after v4.0.4
+- Lupopedia 4.0.4 is the last shared release with Crafty Syntax
+- See [Fork Takeover Documentation](docs/FORK_TAKEOVER_PLAN.md) for complete details
+
 **Evolutionary System**: All three components now use genetic algorithms (GAs) and evolutionary strategies (ES) for self-optimization. Agents compete in a Darwinian arena where fitness determines survival.
 
 ### 🗺️ Version Roadmap (Corrected Per Reality)
@@ -80,6 +94,8 @@ parallel_paths: []
 - *Current Stable:* v3.7.5 (Human Operator → Client)
 - *Next Release:* v3.8.0 (Living Tables Integration)
 - *Evolution Path:* Standalone human system that feeds Lupopedia's agent ecosystem
+- *Final Version:* v4.0.4 (Final iteration before fork takeover)
+- *⚠️ IMPORTANT:* No development on Crafty Syntax past v4.0.4 - all future work moves to Lupopedia 4.0.x
 
 **WOLFIE HEADERS**
 - *Current Stable:* v2.1.0
@@ -88,7 +104,15 @@ parallel_paths: []
 
 **LUPOPEDIA PLATFORM**
 - *Current:* v4.0.0 (Evolutionary Core)
-- *Patch Path:* v4.0.x (Incremental evolution)
+- *Patch Path:* v4.0.x (Incremental evolution leading to fork takeover)
+  - v4.0.1: Emergency Fixes & SOT System
+  - v4.0.2: SOT Integration & Platform Features
+  - v4.0.3: Performance Optimization
+  - v4.0.4: Final Crafty Syntax Integration (last shared release)
+- *Fork Takeover:* v4.0.5 (Clean Fork - Independent Evolution)
+  - **All development from v4.0.5 onward is on Lupopedia 4.0.x only**
+  - No more Crafty Syntax development after v4.0.4
+  - Lupopedia becomes fully independent platform
 - *Next Minor:* v4.1.0 (Agent Self-Construction + Human-AI Hybridization)
 
 ---
@@ -111,10 +135,38 @@ parallel_paths: []
 
 ## 🔧 What's Next (Continuing Evolution)
 
-**v4.0.1 (Patch: Fix WOLFIE's version anxiety)**:
-- Implement proper version control schema in `platform_manifest`
-- Ensure version numbers reflect actual fork lineage
-- Fix version tracking across all components
+**v4.0.1 (Patch: Emergency Fixes & SOT System)**:
+- Genome format tracking
+- Fitness provenance tracking
+- Consent management
+- SOT system activation
+- Ministry of Truth deployment
+
+**v4.0.2 (Patch: SOT Integration & Platform Features)**:
+- SOT integration with evolutionary platform (minimal key-based lookups)
+- Ministry of Truth enforcement across all operations
+- Population scaling optimization
+- Monitoring dashboard for evolutionary progress
+
+**v4.0.3 (Patch: Performance Optimization)**:
+- Platform optimizations (caching, query optimization, async processing)
+- SOT optimization (minimal indexing, JSON paths)
+- Ministry scaling (async checks, distributed enforcement)
+- Evolutionary optimization (GA tuning, population scaling)
+- Monitoring enhancements
+
+**v4.0.4 (Patch: Final Crafty Syntax Integration)**:
+- Final fixes from Crafty Syntax 4.0.4
+- Full dependency audit
+- SOT finalization (key-based validation)
+- Fork documentation and preparation
+- **Last shared release with Crafty Syntax**
+
+**v4.0.5 (Clean Fork - Independent Evolution)**:
+- **FORK TAKEOVER**: Lupopedia becomes fully independent
+- All future development on Lupopedia 4.0.x only
+- No more Crafty Syntax development
+- Independent evolution path begins
 
 **v4.1.0 (Emergent Governance Protocols)**:
 - Human-AI hybridization (Wolfie-Lilith offspring)
@@ -320,10 +372,16 @@ Requests must include your project goals and preferred deployment tier (shared h
 | v0.0.8    | Functional Command System | ✅ Complete (2025-11-17) |
 | v0.1.0    | Dual-database support (MySQL ↔ PostgreSQL) | ✅ **RELEASED** (2025-11-20) |
 | v4.0.0    | Evolutionary Arena (Darwinian Agent Competition - Fork of Crafty Syntax 4.0.0) | 🎯 **APEX** (2025-11-20) |
-| v4.0.1    | Patch: Fix WOLFIE's version anxiety, proper version control schema | 📋 Planned |
+| v4.0.1    | Emergency Fixes & SOT System | 📋 Planned |
+| v4.0.2    | SOT Integration & Platform Features | 📋 Planned |
+| v4.0.3    | Performance Optimization | 📋 Planned |
+| v4.0.4    | Final Crafty Syntax Integration (Last Shared Release) | 📋 Planned |
+| v4.0.5    | **Clean Fork - Independent Evolution** (Fork Takeover) | 📋 Planned |
 | v4.1.0    | Emergent Governance Protocols (Human-AI Hybridization, Agent Self-Construction) | 📋 Planned |
 | v0.2.0    | Notification, vector search, invite tooling | ⏳ In Development |
 | v1.0.0    | Public source release + installer | 📋 Pending beta completion |
+
+**⚠️ FORK TAKEOVER**: After v4.0.4, all development moves to Lupopedia 4.0.x. Crafty Syntax development ends at v4.0.4.
 
 ### Next Steps (v0.2.0 - In Development)
 

@@ -43,6 +43,7 @@ parallel_paths: []
 - **[Agent Communication Protocol](AGENT_COMMUNICATION_PROTOCOL.md)** - How agents communicate and route requests
 - **[Channel Architecture Implementation Plan](CHANNEL_ARCHITECTURE_IMPLEMENTATION_PLAN.md)** - 1000-channel system design
 - **[Evolutionary Branching System](EVOLUTIONARY_BRANCHING_SYSTEM.md)** - Version control as genetic lineage tracking
+- **[Fork Takeover Plan](FORK_TAKEOVER_PLAN.md)** - Crafty Syntax 4.0.4 → Lupopedia 4.0.5 fork transition
 - **[Platform Status Synthesis](PLATFORM_STATUS_SYNTHESIS.md)** - Current system status
 
 ### Reference
@@ -90,6 +91,9 @@ parallel_paths: []
    - **Biological Tables**: `livehelp_genes`, `livehelp_transcripts`, `livehelp_proteins`, `livehelp_mutations`
    - **Evolutionary Tables**: `evo_genome`, `evo_population_stats`, `evo_fitness_logs`
    - **Fork Lineage**: Crafty Syntax 3.7.5 → Crafty Syntax 4.0.0 (parent of LUPOPEDIA fork)
+   - **⚠️ IMPORTANT**: Crafty Syntax 4.0.4 is the **FINAL VERSION** - no development past v4.0.4
+   - **Fork Takeover**: After v4.0.4, all development moves to Lupopedia 4.0.x
+   - See: [Fork Takeover Plan](FORK_TAKEOVER_PLAN.md)
    - See: Crafty Syntax documentation
 
 2. **WOLFIE Headers 2.3.0** (Required Dependency - Separate Package - Mutating)
@@ -130,6 +134,7 @@ docs/
 ├── INSTALLATION.md
 ├── WOLFIE_HEADERS_INTEGRATION.md
 ├── EVOLUTIONARY_BRANCHING_SYSTEM.md
+├── FORK_TAKEOVER_PLAN.md
 ├── CHEAT_SHEET.md
 ├── SUPPORT.md
 ├── AGENT_COMMUNICATION_PROTOCOL.md
@@ -148,6 +153,7 @@ docs/
 - **Agents**: [Agent Communication Protocol](AGENT_COMMUNICATION_PROTOCOL.md)
 - **Channels**: [Channel Architecture](CHANNEL_ARCHITECTURE_IMPLEMENTATION_PLAN.md)
 - **Version Control**: [Evolutionary Branching System](EVOLUTIONARY_BRANCHING_SYSTEM.md)
+- **Fork Transition**: [Fork Takeover Plan](FORK_TAKEOVER_PLAN.md)
 - **Commands**: [Functional Commands Reference](FUNCTIONAL_COMMANDS_REFERENCE.md)
 - **WOLFIE Headers**: [WOLFIE Headers Integration](WOLFIE_HEADERS_INTEGRATION.md)
 
